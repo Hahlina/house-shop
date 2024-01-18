@@ -1,5 +1,12 @@
+import { RootProvider } from "common/providers";
+import { HomeContent } from "modules";
+
 function App() {
-    return <div className="App">Hello</div>;
+    return (
+        <RootProvider>
+            <HomeContent />
+        </RootProvider>
+    );
 }
 
 export default App;
