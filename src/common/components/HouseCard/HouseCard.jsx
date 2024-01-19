@@ -1,13 +1,13 @@
 import { HouseCardStyled } from "./HouseCard.styled";
 
-export const HouseCard = () => {
+export const HouseCard = ({ address, preview_image, price, title }) => {
     return (
         <HouseCardStyled>
-            <img src="/images/mockImage.webp" alt="house" />
+            <img src={preview_image} alt={title} />
             <div className="preview-information">
-                <p className="card-title">Title</p>
-                <p className="address">Adress adress adress adress</p>
-                <p className="price">$120 000</p>
+                <p className="card-title">{title}</p>
+                <p className="address">{address}</p>
+                <p className="price">${price}</p>
             </div>
         </HouseCardStyled>
     );
