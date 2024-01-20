@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
 
-import { API_BASE_URL, API_ROUTES } from "common/constants";
+import { API_BASE_URL, API_ROUTES, EMPTY_ARRAY } from "common/constants";
 
 export const useProperties = () => {
-    const [data, setData] = useState([]);
+    const [data, setData] = useState(EMPTY_ARRAY);
     const [isError, setIsError] = useState(false);
 
     useEffect(() => {

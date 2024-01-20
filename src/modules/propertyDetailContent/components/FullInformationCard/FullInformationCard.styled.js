@@ -11,7 +11,7 @@ export const FullInformationCardStyled = styled.div`
     height: 100%;
     border-radius: 20px;
     padding: 40px;
-    background: ${({ theme }) => theme.colors.white};
+    background: ${({ theme: { colors } }) => colors.white};
 
     p {
         font-size: 22px;
@@ -26,6 +26,6 @@ export const FullInformationCardStyled = styled.div`
     p.price {
         text-align: center;
         font-size: 30px;
-        color: ${({ theme }) => theme.colors.orange};
+        color: ${({ theme: { colors } }) => colors.orange};
     }
 `;

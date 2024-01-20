@@ -24,7 +24,7 @@ export const PreviewBannerStyled = styled.div`
 
         span {
             display: inline-block;
-            background-color: ${({ theme }) => theme.colors.white100};
+            background-color: ${({ theme: { colors } }) => colors.white100};
             border-bottom-right-radius: 20px;
             width: fit-content;
             line-height: 1.3;

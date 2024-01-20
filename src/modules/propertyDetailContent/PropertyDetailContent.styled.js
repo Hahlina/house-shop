@@ -9,8 +9,8 @@ export const PropertyDetailContentStyled = styled.div`
     gap: 50px;
     margin: 50px 0;
 
-    @media (min-width: 1024px) {
+    ${({ theme: { media } }) => media.l`
         flex-direction: row;
         align-items: flex-start;
-    }
+    `}
 `;

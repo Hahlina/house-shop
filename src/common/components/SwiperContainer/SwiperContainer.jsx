@@ -1,6 +1,8 @@
 import { useEffect, useRef } from "react";
 import { register } from "swiper/element/bundle";
 
+import { colors } from "common/styles";
+
 export const SwiperContainer = (props) => {
     const swiperRef = useRef(null);
     const { children, ...rest } = props;
@@ -9,6 +11,14 @@ export const SwiperContainer = (props) => {
         register();
 
         const params = {
+            injectStyles: [
+                `.swiper-button-next, .swiper-button-prev {
+                  color: ${colors.orange};
+                 }
+                 .swiper-pagination-bullet {
+                  background: ${colors.orange};
+                 }`
+            ],
             ...rest
         };
 

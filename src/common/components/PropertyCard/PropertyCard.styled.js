@@ -5,15 +5,15 @@ export const PropertyCardStyled = styled.div`
     width: 350px;
     height: 500px;
     border-radius: 26px;
-    background: ${({ theme }) => theme.colors.white};
-    border: 1px solid ${({ theme }) => theme.colors.gray};
+    background: ${({ theme: { colors } }) => colors.white};
+    border: 1px solid ${({ theme: { colors } }) => colors.gray};
     transition:
         transform 0.5s ease,
         box-shadow 0.3s ease;
 
     &:hover {
         transform: scale(1.02);
-        box-shadow: 0 34px 36px 0 ${({ theme }) => theme.colors.black100};
+        box-shadow: 0 34px 36px 0 ${({ theme: { colors } }) => colors.black100};
     }
 
     img {
@@ -41,7 +41,6 @@ export const PropertyCardStyled = styled.div`
     }
 
     p.price {
-        font-size: 23px;
-        color: ${({ theme }) => theme.colors.orange};
+        color: ${({ theme: { colors } }) => colors.orange};
     }
 `;

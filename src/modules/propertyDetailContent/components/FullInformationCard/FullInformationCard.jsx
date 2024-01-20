@@ -1,5 +1,5 @@
+import { convertPrice } from "common/utils";
 import { FullInformationCardStyled } from "./FullInformationCard.styled";
-import { convertPrice } from "common/utils/convertPrice";
 
 export const FullInformationCard = ({ address, description, price, seller, title }) => {
     const convertedPriceToUsd = convertPrice(price);

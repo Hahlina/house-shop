@@ -17,7 +17,7 @@ export const PropertiesListStyled = styled.div`
             display: inline-block;
             height: 4px;
             width: 100px;
-            background: ${({ theme }) => theme.colors.orange};
+            background: ${({ theme: { colors } }) => colors.orange};
             bottom: 0;
         }
     }

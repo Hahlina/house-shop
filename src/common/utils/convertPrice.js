@@ -2,4 +2,4 @@ export const convertPrice = (price) =>
     new Intl.NumberFormat("en-US", {
         style: "currency",
         currency: "USD"
-    }).format(price);
+    }).format(price || 0);

@@ -35,6 +35,7 @@ export const StyledSwiperThumbContainer = styled(SwiperContainer)`
         object-fit: cover;
         object-position: center;
         border-radius: 20px;
+        cursor: pointer;
     }
 
     swiper-slide {
