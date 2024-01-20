@@ -1,22 +1,23 @@
 import { useEffect, useState } from "react";
+
 import { API_BASE_URL, API_ROUTES } from "common/constants";
 
-export const useRealEstateList = () => {
+export const useProperties = () => {
     const [data, setData] = useState([]);
     const [isError, setIsError] = useState(false);
 
     useEffect(() => {
-        const getRealEstateList = async () => {
-            const requestUrl = `${API_BASE_URL}/${API_ROUTES.ALL_REAL_ESTATE}`;
+        const getProperties = async () => {
+            const requestUrl = `${API_BASE_URL}/${API_ROUTES.PROPERTIES}`;
             try {
                 const response = await fetch(requestUrl);
-                const realEstateData = await response.json();
-                setData(realEstateData);
+                const properties = await response.json();
+                setData(properties);
             } catch (error) {
                 setIsError(true);
             }
         };
-        getRealEstateList();
+        getProperties();
     }, []);
 
     return { data, isError };

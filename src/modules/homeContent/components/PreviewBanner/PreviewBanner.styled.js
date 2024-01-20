@@ -13,7 +13,7 @@ export const PreviewBannerStyled = styled.div`
         width: 100%;
     }
 
-    p.preview-title {
+    h1.preview-title {
         position: absolute;
         display: flex;
         flex-direction: column;

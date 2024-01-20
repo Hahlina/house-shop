@@ -7,6 +7,7 @@ export const GlobalStyle = createGlobalStyle`
   html {
     box-sizing: border-box;
   }
+  
   *, *::after, *::before {
     box-sizing: inherit;
   }
@@ -33,7 +34,7 @@ export const GlobalStyle = createGlobalStyle`
 
   a {
     text-decoration: none;
-    color: black;
+    color:${({ theme }) => theme.colors.black}
   }
 
   ul,

@@ -1,1 +1,2 @@
-export * from "./useRealEstateList";
+export * from "./useProperties";
+export * from "./useProperty";

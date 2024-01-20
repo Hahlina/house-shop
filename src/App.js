@@ -1,12 +1,10 @@
+import { HomeContent, PropertyDetailContent } from "modules";
+
 import { RootProvider } from "common/providers";
-import { HomeContent } from "modules";
 
-function App() {
-    return (
-        <RootProvider>
-            <HomeContent />
-        </RootProvider>
-    );
-}
-
-export default App;
+export const App = () => (
+    <RootProvider>
+        <HomeContent />
+        <PropertyDetailContent />
+    </RootProvider>
+);

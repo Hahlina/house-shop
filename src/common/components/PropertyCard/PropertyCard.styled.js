@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const HouseCardStyled = styled.div`
+export const PropertyCardStyled = styled.div`
     overflow: hidden;
     width: 350px;
     height: 500px;
@@ -12,7 +12,7 @@ export const HouseCardStyled = styled.div`
         box-shadow 0.3s ease;
 
     &:hover {
-        transform: scale(1.05);
+        transform: scale(1.02);
         box-shadow: 0 34px 36px 0 ${({ theme }) => theme.colors.black100};
     }
 
@@ -31,13 +31,13 @@ export const HouseCardStyled = styled.div`
         height: 200px;
     }
 
-    p.card-title {
-        font-weight: 700;
-        font-size: 25px;
+    p {
+        font-size: 23px;
     }
 
-    p.address {
-        font-size: 23px;
+    p.card-title {
+        font-size: 25px;
+        font-weight: 700;
     }
 
     p.price {

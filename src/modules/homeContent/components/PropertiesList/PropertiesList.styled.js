@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const HousesListStyled = styled.div`
+export const PropertiesListStyled = styled.div`
     margin: 100px 0;
 
     p.list-title {
