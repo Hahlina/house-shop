@@ -1,7 +1,6 @@
 {
   "arrowParens": "always",
   "endOfLine": "crlf",
-  "jsxBracketSameLine": true,
   "jsxSingleQuote": false,
   "printWidth": 120,
   "semi": true,

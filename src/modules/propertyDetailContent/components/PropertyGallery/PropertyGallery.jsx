@@ -16,7 +16,8 @@ export const PropertyGallery = ({ photos }) => (
             className="mySwiper2"
             spaceBetween={20}
             freeMode
-            watchSlidesProgress>
+            watchSlidesProgress
+        >
             {photos?.map((photo, index) => (
                 <SwiperSlide key={`thumbs-${index}`}>
                     <img src={photo} alt={`property-thumbs-${index}`} />
