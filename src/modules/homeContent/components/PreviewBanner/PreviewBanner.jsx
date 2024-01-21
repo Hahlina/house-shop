@@ -1,4 +1,4 @@
-import { PreviewBannerStyled } from "./PreviewBanner.styled";
+import { PreviewBannerStyled } from './PreviewBanner.styled';
 
 export const PreviewBanner = () => (
     <PreviewBannerStyled>

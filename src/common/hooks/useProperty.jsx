@@ -1,6 +1,6 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState } from 'react';
 
-import { API_BASE_URL, API_ROUTES, EMPTY_OBJECT } from "common/constants";
+import { API_BASE_URL, API_ROUTES, EMPTY_OBJECT } from 'common/constants';
 
 export const useProperty = (id) => {
     const [data, setData] = useState(EMPTY_OBJECT);

@@ -1,8 +1,8 @@
-import { FullInformationCard, PropertyGallery } from "./components";
+import { FullInformationCard, PropertyGallery } from './components';
 
-import { useProperty } from "common/hooks";
-import { EMPTY_OBJECT } from "common/constants";
-import { PropertyDetailContentStyled } from "./PropertyDetailContent.styled";
+import { useProperty } from 'common/hooks';
+import { EMPTY_OBJECT } from 'common/constants';
+import { PropertyDetailContentStyled } from './PropertyDetailContent.styled';
 
 export const PropertyDetailContent = () => {
     const { data } = useProperty(1);

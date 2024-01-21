@@ -1,6 +1,6 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
-import { SwiperContainer } from "common/components";
+import { SwiperContainer } from 'common/components';
 
 export const StyledGalleryWrapper = styled.div`
     max-width: 600px;

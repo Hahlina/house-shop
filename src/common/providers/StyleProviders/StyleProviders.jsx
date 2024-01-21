@@ -1,6 +1,6 @@
-import { ThemeProvider } from "styled-components";
+import { ThemeProvider } from 'styled-components';
 
-import { GlobalStyle, theme } from "common/styles";
+import { GlobalStyle, theme } from 'common/styles';
 
 export const StyleProvider = ({ children }) => (
     <ThemeProvider theme={theme}>

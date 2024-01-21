@@ -1,2 +1,2 @@
-export * from "./RootProvider";
-export * from "./StyleProviders/StyleProviders";
+export * from './RootProvider';
+export * from './StyleProviders/StyleProviders';

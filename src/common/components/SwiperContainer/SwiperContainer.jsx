@@ -1,7 +1,7 @@
-import { useEffect, useRef } from "react";
-import { register } from "swiper/element/bundle";
+import { useEffect, useRef } from 'react';
+import { register } from 'swiper/element/bundle';
 
-import { colors } from "common/styles";
+import { colors } from 'common/styles';
 
 export const SwiperContainer = (props) => {
     const swiperRef = useRef(null);

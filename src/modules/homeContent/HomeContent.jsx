@@ -1,4 +1,4 @@
-import { PropertiesList, PreviewBanner } from "./components";
+import { PropertiesList, PreviewBanner } from './components';
 
 export const HomeContent = () => (
     <>

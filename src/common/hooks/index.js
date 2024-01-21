@@ -1,2 +1,2 @@
-export * from "./useProperties";
-export * from "./useProperty";
+export * from './useProperties';
+export * from './useProperty';

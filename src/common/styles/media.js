@@ -1,12 +1,12 @@
-import { css } from "styled-components";
+import { css } from 'styled-components';
 
 const device = {
-    xs: "375px",
-    sm: "425px",
-    md: "768px",
-    l: "1024px",
-    lg: "1280px",
-    xl: "1440px"
+    xs: '375px',
+    sm: '425px',
+    md: '768px',
+    l: '1024px',
+    lg: '1280px',
+    xl: '1440px'
 };
 
 export const media = {

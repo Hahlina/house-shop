@@ -1,5 +1,5 @@
-import { createGlobalStyle } from "styled-components";
-import { normalize } from "styled-normalize";
+import { createGlobalStyle } from 'styled-components';
+import { normalize } from 'styled-normalize';
 
 export const GlobalStyle = createGlobalStyle`
   ${normalize}
@@ -16,7 +16,7 @@ export const GlobalStyle = createGlobalStyle`
     margin: 0;
     padding: 0;
     font-family: 'DM Sans', sans-serif;
-    background: ${({ theme }) => theme.colors.white100}
+    background: ${({ theme: { colors } }) => colors.white100}
   }
   
   p,
@@ -34,7 +34,7 @@ export const GlobalStyle = createGlobalStyle`
 
   a {
     text-decoration: none;
-    color:${({ theme }) => theme.colors.black}
+    color:${({ theme: { colors } }) => colors.black}
   }
 
   ul,

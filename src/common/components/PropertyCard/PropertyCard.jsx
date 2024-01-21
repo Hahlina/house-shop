@@ -1,5 +1,5 @@
-import { convertPrice } from "common/utils";
-import { PropertyCardStyled } from "./PropertyCard.styled";
+import { convertPrice } from 'common/utils';
+import { PropertyCardStyled } from './PropertyCard.styled';
 
 export const PropertyCard = ({ address, preview_image, price, title }) => {
     const convertedPriceToUsd = convertPrice(price);

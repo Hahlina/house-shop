@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const PropertiesListStyled = styled.div`
     margin: 100px 0;
@@ -12,7 +12,7 @@ export const PropertiesListStyled = styled.div`
         margin-bottom: 50px;
 
         &::before {
-            content: "";
+            content: '';
             position: absolute;
             display: inline-block;
             height: 4px;

@@ -1,2 +1,2 @@
-export * from "./homeContent/HomeContent";
-export * from "./propertyDetailContent/PropertyDetailContent";
+export * from './homeContent/HomeContent';
+export * from './propertyDetailContent/PropertyDetailContent';

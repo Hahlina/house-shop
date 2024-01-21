@@ -1,7 +1,7 @@
-import { PropertyCard } from "common/components";
+import { PropertyCard } from 'common/components';
 
-import { useProperties } from "common/hooks";
-import { PropertiesListStyled } from "./PropertiesList.styled";
+import { useProperties } from 'common/hooks';
+import { PropertiesListStyled } from './PropertiesList.styled';
 
 export const PropertiesList = () => {
     const { data } = useProperties();

@@ -1,6 +1,6 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState } from 'react';
 
-import { API_BASE_URL, API_ROUTES, EMPTY_ARRAY } from "common/constants";
+import { API_BASE_URL, API_ROUTES, EMPTY_ARRAY } from 'common/constants';
 
 export const useProperties = () => {
     const [data, setData] = useState(EMPTY_ARRAY);
