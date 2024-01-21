@@ -1,46 +1,40 @@
+import { Card, CardContent, CardMedia } from '@mui/material';
 import styled from 'styled-components';
 
-export const PropertyCardStyled = styled.div`
-    overflow: hidden;
+export const PropertyCardStyled = styled(Card)`
     width: 350px;
     height: 500px;
-    border-radius: 26px;
-    background: ${({ theme: { colors } }) => colors.white};
     border: 1px solid ${({ theme: { colors } }) => colors.gray};
-    transition:
-        transform 0.5s ease,
-        box-shadow 0.3s ease;
+    transition: box-shadow 0.3s ease;
 
     &:hover {
-        transform: scale(1.02);
         box-shadow: 0 34px 36px 0 ${({ theme: { colors } }) => colors.black100};
     }
+`;
 
-    img {
-        height: 280px;
-        width: 100%;
-        object-fit: cover;
-        object-position: center;
-    }
+export const CardMediaStyled = styled(CardMedia)`
+    height: 280px;
+`;
 
-    div.preview-information {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        padding: 25px;
-        height: 200px;
+export const CardContentStyled = styled(CardContent)`
+    display: flex;
+    flex-direction: column;
+    height: 220px;
+
+    & > * {
+        height: 33%;
     }
 
     p {
-        font-size: 23px;
+        font-size: 20px;
     }
 
-    p.card-title {
-        font-size: 25px;
+    p.title {
         font-weight: 700;
     }
 
     p.price {
         color: ${({ theme: { colors } }) => colors.orange};
+        font-size: 25px;
     }
 `;

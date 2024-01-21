@@ -1,7 +1,7 @@
-import { HomeContent, PropertyDetailContent } from "modules";
-import { BaseLayout } from "common/layouts";
+import { HomeContent, PropertyDetailContent } from 'modules';
+import { BaseLayout } from 'common/layouts';
 
-import { RootProvider } from "common/providers";
+import { RootProvider } from 'common/providers';
 
 export const App = () => (
     <RootProvider>
