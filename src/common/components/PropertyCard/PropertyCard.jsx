@@ -1,4 +1,4 @@
-import { CardActionArea } from '@mui/material';
+import { CardActionArea, Typography } from '@mui/material';
 
 import { convertPrice } from 'common/utils';
 import { PropertyCardStyled, CardMediaStyled, CardContentStyled } from './PropertyCard.styled';
@@ -10,9 +10,9 @@ export const PropertyCard = ({ address, preview_image, price, title }) => {
             <CardActionArea>
                 <CardMediaStyled image={preview_image} />
                 <CardContentStyled>
-                    <p className="title">{title}</p>
-                    <p className="address">{address}</p>
-                    <p className="price">{convertedPriceToUsd}</p>
+                    <Typography className="title">{title}</Typography>
+                    <Typography className="address">{address}</Typography>
+                    <Typography className="price">{convertedPriceToUsd}</Typography>
                 </CardContentStyled>
             </CardActionArea>
         </PropertyCardStyled>

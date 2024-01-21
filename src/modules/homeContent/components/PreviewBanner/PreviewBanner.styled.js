@@ -19,23 +19,23 @@ export const PreviewBannerStyled = styled.div`
         flex-direction: column;
         top: -1px;
         left: -1px;
-        font-size: calc(40px + (60 - 40) * ((100vw - 375px) / (1200 - 375)));
+    }
+
+    p {
+        display: inline-block;
+        width: fit-content;
         font-weight: 700;
+        font-size: calc(35px + (60 - 40) * ((100vw - 375px) / (1200 - 375)));
+        background-color: ${({ theme: { colors } }) => colors.white100};
+        border-bottom-right-radius: 20px;
+        line-height: 1.3;
+    }
 
-        span {
-            display: inline-block;
-            background-color: ${({ theme: { colors } }) => colors.white100};
-            border-bottom-right-radius: 20px;
-            width: fit-content;
-            line-height: 1.3;
-        }
+    p:first-child {
+        padding-right: 80px;
+    }
 
-        span:first-child {
-            padding-right: 80px;
-        }
-
-        span:last-child {
-            padding-right: 40px;
-        }
+    p:last-child {
+        padding-right: 40px;
     }
 `;

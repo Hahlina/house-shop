@@ -13,16 +13,6 @@ export const FullInformationCardStyled = styled.div`
     padding: 40px;
     background: ${({ theme: { colors } }) => colors.white};
 
-    p {
-        font-size: 22px;
-    }
-
-    p.title {
-        font-size: 25px;
-        font-weight: 700;
-        text-align: center;
-    }
-
     p.price {
         text-align: center;
         font-size: 30px;
