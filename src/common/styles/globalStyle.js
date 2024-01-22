@@ -15,7 +15,6 @@ export const GlobalStyle = createGlobalStyle`
   body {
     margin: 0;
     padding: 0;
-    font-family: 'DM Sans', sans-serif;
     background: ${({ theme: { colors } }) => colors.white100}
   }
   
