@@ -7,6 +7,7 @@ import { PropertyDetailContentStyled } from './PropertyDetailContent.styled';
 export const PropertyDetailContent = () => {
     const { data } = useProperty(1);
     const { photos, ...restInformation } = data || EMPTY_OBJECT;
+
     return (
         <PropertyDetailContentStyled>
             <PropertyGallery {...{ photos }} />
