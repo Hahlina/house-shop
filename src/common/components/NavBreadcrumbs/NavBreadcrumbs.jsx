@@ -25,7 +25,7 @@ export const NavBreadcrumbs = ({ customPathNames }) => {
             </LinkStyled>
             {breadcrumbConfig.map(({ name, path, ...rest }) => (
                 <LinkStyled key={path} to={path} {...rest}>
-                    <Typography fontSize={18}>{name}</Typography>
+                    <Typography>{name}</Typography>
                 </LinkStyled>
             ))}
         </Breadcrumbs>
