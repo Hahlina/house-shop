@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 
+import { Skeleton } from '@mui/material';
 import { SwiperContainer } from 'common/components';
 
 export const StyledGalleryWrapper = styled.div`
@@ -42,4 +43,8 @@ export const StyledSwiperThumbContainer = styled(SwiperContainer)`
         width: 100px;
         height: 100px;
     }
+`;
+
+export const StyledSkeletonThumb = styled(Skeleton)`
+    transform: scale(1, 1);
 `;

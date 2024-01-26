@@ -5,7 +5,7 @@ export const FullInformationCardStyled = styled.div`
     flex-direction: column;
     gap: 40px;
     min-width: 300px;
-    max-width: 700px;
+    max-width: 500px;
     max-height: 600px;
     width: 100%;
     height: 100%;
