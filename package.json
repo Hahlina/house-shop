@@ -14,7 +14,8 @@
     "prettier": "prettier src --check",
     "prettier:fix": "prettier src --write",
     "lint": "npm run prettier && npm run eslint && npm run stylelint",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "ngrok": "ngrok http 3000"
   },
   "dependencies": {
     "@mui/material": "^5.15.5",
