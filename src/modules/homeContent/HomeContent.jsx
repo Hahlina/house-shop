@@ -1,8 +1,11 @@
+import { Container } from 'common/components';
 import { PropertiesList, PreviewBanner } from './components';
 
 export const HomeContent = () => (
     <>
         <PreviewBanner />
-        <PropertiesList />
+        <Container>
+            <PropertiesList />
+        </Container>
     </>
 );

@@ -2,6 +2,7 @@ import { useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 
+import { Container } from 'common/components';
 import {
     FullInformationCard,
     PropertyGallery,
@@ -26,12 +27,12 @@ export const PropertyDetailContent = () => {
     if (loading) return <PropertyDetailContentLoader />;
 
     return (
-        <>
+        <Container>
             <PropertyDetailBreadCrumbs />
             <PropertyDetailContentStyled>
                 <PropertyGallery {...{ photos }} />
                 <FullInformationCard {...restInformation} />
             </PropertyDetailContentStyled>
-        </>
+        </Container>
     );
 };

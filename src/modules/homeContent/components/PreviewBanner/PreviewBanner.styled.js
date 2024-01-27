@@ -2,11 +2,9 @@ import styled from 'styled-components';
 
 export const PreviewBannerStyled = styled.div`
     position: relative;
-    margin-top: 50px;
-    height: 90vh;
+    height: 100dvh;
 
     img.preview-image {
-        border-radius: 30px;
         object-fit: cover;
         object-position: center;
         height: 100%;
