@@ -3,7 +3,7 @@ import { Skeleton } from '@mui/material';
 import { FullInformationCardStyled } from './FullInformationCard.styled';
 
 export const FullInformationCardLoader = () => {
-    const skeletonArray = Array(4).fill(null);
+    const skeletonArray = Array(6).fill(null);
     return (
         <FullInformationCardStyled>
             {skeletonArray.map((_, index) => (
