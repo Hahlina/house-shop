@@ -9,7 +9,7 @@ const sagaMiddleware = createSagaMiddleware();
 export const appStore = configureStore({
     devTools: true,
     reducer: rootReducer,
-    middleware: (getDefaultMiddleware) => getDefaultMiddleware({ thunk: true }).concat(sagaMiddleware)
+    middleware: (getDefaultMiddleware) => getDefaultMiddleware().concat(sagaMiddleware)
 });
 
 sagaMiddleware.run(rootSaga);
