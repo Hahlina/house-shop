@@ -1,10 +1,7 @@
+import { AppRouter, RootProvider } from 'common/providers';
 
-function App() {
-  return (
-    <div className="App">
-      Hello
-    </div>
-  );
-}
-
-export default App;
+export const App = () => (
+    <RootProvider>
+        <AppRouter />
+    </RootProvider>
+);

@@ -1,0 +1,38 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:react-hooks/recommended",
+    "plugin:react/recommended"
+  ],
+  "ignorePatterns": [
+    "node_modules",
+    "build",
+    "openapi-client",
+    "cypress/integration/examples",
+    "!.storybook",
+    ".github",
+    ".ci",
+    ".git"
+  ],
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": "latest",
+    "sourceType": "module"
+  },
+  "plugins": [
+    "react", "react-hooks"
+  ],
+  "rules": {
+    "no-console": "warn",
+    "react/react-in-jsx-scope": "off",
+    "react/prop-types": "off",
+    "no-unused-vars": "warn",
+    "react/no-unescaped-entities": "off"
+  }
+}
