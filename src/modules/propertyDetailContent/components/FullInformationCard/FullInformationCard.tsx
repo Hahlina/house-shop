@@ -1,10 +1,14 @@
+import type { FC } from 'react';
 import { Typography } from '@mui/material';
 
 import { convertPrice } from 'common/utils';
+import type { IPropertyDetail } from 'common/types';
 import { FullInformationCardStyled } from './FullInformationCard.styled';
 
-export const FullInformationCard = ({ address, description, price, seller, title }) => {
-    const convertedPriceToUsd = convertPrice(price);
+interface IFullInformationCard extends Omit<IPropertyDetail, 'photos'> {}
+
+export const FullInformationCard: FC<IFullInformationCard> = ({ address, description, price, seller, title }) => {
+    const convertedPriceToUsd: string = convertPrice(price ?? 0);
     return (
         <FullInformationCardStyled>
             <Typography variant="h5" fontWeight={700}>

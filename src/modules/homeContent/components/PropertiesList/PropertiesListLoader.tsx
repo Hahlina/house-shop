@@ -3,7 +3,7 @@ import { PropertyCardLoader } from 'common/components';
 
 import { PropertiesListStyled } from './PropertiesList.styled';
 
-export const PropertiesListLoader = ({ length = 6 }) => {
+export const PropertiesListLoader = ({ length = 6 }: { length?: number }) => {
     const loaderList = Array(length).fill(null);
     return (
         <PropertiesListStyled>

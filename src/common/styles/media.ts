@@ -1,4 +1,4 @@
-import { css } from 'styled-components';
+import { type StyleFunction, type StyledObject, css } from 'styled-components';
 
 const device = {
     xs: '375px',
@@ -9,7 +9,11 @@ const device = {
     xl: '1440px'
 };
 
-export const media = {
+type MediaObject = {
+    [key in keyof typeof device]: StyleFunction<StyledObject>;
+};
+
+export const media: MediaObject = {
     xs: (...args) => css`
         @media (min-width: ${device.xs}) {
             ${css(...args)};

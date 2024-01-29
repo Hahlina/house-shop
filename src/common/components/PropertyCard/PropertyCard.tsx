@@ -1,12 +1,15 @@
+import type { FC } from 'react';
 import { Link } from 'react-router-dom';
 
 import { CardActionArea, Typography } from '@mui/material';
 
 import { convertPrice } from 'common/utils';
 import { APP_ROUTES } from 'common/constants';
+import type { IProperty } from 'common/types';
 import { PropertyCardStyled, CardMediaStyled, CardContentStyled } from './PropertyCard.styled';
 
-export const PropertyCard = ({ address, preview_image, price, title, id }) => {
+interface IPropertyCard extends IProperty {}
+export const PropertyCard: FC<IPropertyCard> = ({ address, preview_image, price, title, id }) => {
     const convertedPriceToUsd = convertPrice(price);
 
     return (

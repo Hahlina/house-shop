@@ -26,12 +26,14 @@
       "common/layouts/*": ["common/layouts/*"],
       "common/styles/*": ["common/styles/*"],
       "common/utils/*": ["common/utils/*"],
+      "common/types/*": ["common/types/*"],
       "modules/*": ["modules/*"],
       "store/*": ["store/*"]
     }
   },
   "include": [
-    "src"
+    "src",
+    "src/common/components/SwiperContainer/swiper.d.ts"
   ],
   "exclude": ["node_modules"]
 }
