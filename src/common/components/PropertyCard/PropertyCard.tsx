@@ -9,6 +9,7 @@ import type { IProperty } from 'common/types';
 import { PropertyCardStyled, CardMediaStyled, CardContentStyled } from './PropertyCard.styled';
 
 interface IPropertyCard extends IProperty {}
+
 export const PropertyCard: FC<IPropertyCard> = ({ address, preview_image, price, title, id }) => {
     const convertedPriceToUsd = convertPrice(price);
 

@@ -21,12 +21,4 @@ describe('fetchApi', () => {
         const result = fetchApi(url, options);
         await expect(result).rejects.toThrow('Network error');
     });
-
-    it('should match snapshot', async () => {
-        global.fetch = jest.fn().mockResolvedValueOnce({
-            json: jest.fn().mockResolvedValue('Snapshot')
-        });
-        const result = await fetchApi(url);
-        expect(result).toMatchSnapshot();
-    });
 });

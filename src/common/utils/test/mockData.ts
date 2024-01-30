@@ -61,3 +61,16 @@ export const mockedCustomPathNames = [
 ];
 
 export const mockedCustomLinkProps = { target: '_blank' };
+
+export const mockReduxStore = {
+    properties: {
+        data: mockProperties,
+        loading: false,
+        error: null
+    },
+    propertyDetail: {
+        data: mockPropertyDetail,
+        loading: false,
+        error: null
+    }
+};

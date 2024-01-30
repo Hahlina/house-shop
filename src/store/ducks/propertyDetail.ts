@@ -13,7 +13,7 @@ interface IPropertyDetailState {
     error: null | string;
 }
 
-const initialState: IPropertyDetailState = {
+export const propertyDetailInitialState: IPropertyDetailState = {
     data: {
         id: null,
         title: null,
@@ -30,7 +30,7 @@ const initialState: IPropertyDetailState = {
 
 const propertyDetailSlice = createSlice({
     name: 'propertyDetail',
-    initialState,
+    initialState: propertyDetailInitialState,
     reducers: {
         getProperty: (state, payload: PayloadAction<string>) => {
             state.loading = true;

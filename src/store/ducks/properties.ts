@@ -13,7 +13,7 @@ interface IPropertiesSlice {
     error: null | string;
 }
 
-const initialState: IPropertiesSlice = {
+export const propertiesInitialState: IPropertiesSlice = {
     data: [],
     loading: false,
     error: null
@@ -21,7 +21,7 @@ const initialState: IPropertiesSlice = {
 
 const propertiesSlice = createSlice({
     name: 'properties',
-    initialState,
+    initialState: propertiesInitialState,
     reducers: {
         getProperties: (state) => {
             state.loading = true;
