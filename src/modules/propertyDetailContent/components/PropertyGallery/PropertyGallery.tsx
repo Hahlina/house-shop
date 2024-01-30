@@ -27,7 +27,7 @@ export const PropertyGallery: FC<IPropertyGallery> = ({ photos }) => {
                 freeMode
                 watchSlidesProgress
                 on={{
-                    init: (swiper) => setThumbsRef(swiper)
+                    init: (swiper: Swiper) => setThumbsRef(swiper)
                 }}
             >
                 {photos?.map((photo, index) => (

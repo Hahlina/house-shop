@@ -1,6 +1,7 @@
 import { type FC, type PropsWithChildren, useEffect, useRef } from 'react';
 import { register } from 'swiper/element/bundle';
-import type { SwiperOptions, Swiper as ISwiperRef } from 'swiper/types';
+import type { Swiper as ISwiperRef } from 'swiper/types';
+import type { SwiperOptions } from 'swiper/types/swiper-options';
 
 import { EMPTY_OBJECT } from 'common/constants';
 import { colors } from 'common/styles';

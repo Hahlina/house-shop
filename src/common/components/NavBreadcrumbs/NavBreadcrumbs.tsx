@@ -11,7 +11,7 @@ export interface ICustomPathNames extends LinkProps {
     name: string;
 }
 interface INavBreadcrumbs {
-    customPathNames: ICustomPathNames[];
+    customPathNames?: ICustomPathNames[];
 }
 
 export const NavBreadcrumbs: FC<INavBreadcrumbs> = ({ customPathNames }) => {
