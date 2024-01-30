@@ -1,24 +1,17 @@
-import { render, screen } from '@testing-library/react';
+import { NavBreadcrumbs } from 'common/components';
 
-import { NavBreadcrumbs } from 'common/components/NavBreadcrumbs/NavBreadcrumbs';
-
-const defaultCustomPathNames = [
-    { name: 'Page 1', to: '/page1' },
-    { name: 'Page 2', to: '/page1/page2' }
-];
-
-const customLinkProps = { target: '_blank' };
+import { render, screen, mockedCustomLinkProps, mockedCustomPathNames } from 'common/utils/test';
 
 jest.mock('react-router-dom', () => ({
     ...jest.requireActual('react-router-dom'),
-    useLocation: () => ({ pathname: 'localhost:3000/example/path' })
+    useLocation: () => ({ pathname: '/example/path' })
 }));
 
 jest.mock('common/components/NavBreadcrumbs/NavBreadcrumbs.styled', () => ({
     LinkStyled: 'a'
 }));
 
-describe('NavBreadcrumbs', () => {
+describe('NavBreadcrumbs component', () => {
     beforeEach(() => {
         jest.clearAllMocks();
     });
@@ -29,12 +22,12 @@ describe('NavBreadcrumbs', () => {
     });
 
     it('should render component with customPathNames prop without crashing', () => {
-        render(<NavBreadcrumbs customPathNames={defaultCustomPathNames} />);
+        render(<NavBreadcrumbs customPathNames={mockedCustomPathNames} />);
         expect(screen.getByLabelText('breadcrumbs')).toBeInTheDocument();
     });
 
     it('should render component with customPathNames prop and custom LinkProps without crashing', () => {
-        const customPathNames = defaultCustomPathNames.map((path) => ({ ...path, ...customLinkProps }));
+        const customPathNames = mockedCustomPathNames.map((path) => ({ ...path, ...mockedCustomLinkProps }));
         render(<NavBreadcrumbs customPathNames={customPathNames} />);
         expect(screen.getByLabelText('breadcrumbs')).toBeInTheDocument();
     });
@@ -45,7 +38,7 @@ describe('NavBreadcrumbs', () => {
     });
 
     it('should match snapshot with customPathNames', () => {
-        render(<NavBreadcrumbs customPathNames={defaultCustomPathNames} />);
+        render(<NavBreadcrumbs customPathNames={mockedCustomPathNames} />);
         expect(screen.getByLabelText('breadcrumbs')).toMatchSnapshot();
     });
 });

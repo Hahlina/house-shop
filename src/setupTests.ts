@@ -4,3 +4,9 @@
 // learn more: https://github.com/testing-library/jest-dom
 import '@testing-library/jest-dom';
 import 'jest-styled-components';
+
+jest.mock('react-router-dom', () => ({
+    Link: 'a',
+    createBrowserRouter: jest.fn(),
+    Navigate: jest.fn()
+}));

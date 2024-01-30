@@ -1,19 +1,23 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Container components should math snapshot with children 1`] = `
-<div
-  class="MuiContainer-root MuiContainer-maxWidthLg css-1oqqzyl-MuiContainer-root"
-  data-testid="container-id"
->
-  <p>
-    Children
-  </p>
+exports[`Container components should take a snapshot with children 1`] = `
+<div>
+  <div
+    class="MuiContainer-root MuiContainer-maxWidthLg css-1oqqzyl-MuiContainer-root"
+    data-testid="container-id"
+  >
+    <p>
+      Children
+    </p>
+  </div>
 </div>
 `;
 
-exports[`Container components should math snapshot without children 1`] = `
-<div
-  class="MuiContainer-root MuiContainer-maxWidthLg css-1oqqzyl-MuiContainer-root"
-  data-testid="container-id"
-/>
+exports[`Container components should take a snapshot without children 1`] = `
+<div>
+  <div
+    class="MuiContainer-root MuiContainer-maxWidthLg css-1oqqzyl-MuiContainer-root"
+    data-testid="container-id"
+  />
+</div>
 `;

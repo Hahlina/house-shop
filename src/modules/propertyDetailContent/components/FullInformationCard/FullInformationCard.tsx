@@ -1,4 +1,5 @@
 import type { FC } from 'react';
+
 import { Typography } from '@mui/material';
 
 import { convertPrice } from 'common/utils';

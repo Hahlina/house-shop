@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`PropertyCard should match snapshot 1`] = `
+exports[`PropertyCard should take a snapshot 1`] = `
 .c0 {
   width: 350px;
   height: 500px;

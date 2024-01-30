@@ -65,5 +65,13 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "jest": {
+    "transformIgnorePatterns": [
+      "node_modules/(?!swiper/.*)"
+    ],
+    "moduleNameMapper": {
+      "^swiper/element/bundle": "<rootDir>/node_modules/swiper/swiper-element.d.ts"
+    }
   }
 }
