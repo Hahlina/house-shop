@@ -50,7 +50,7 @@ export function* getPropertyDetailWorker(action: PayloadAction<string>) {
     const propertyID = action.payload;
 
     try {
-        const property: IPropertyDetail = yield call(() => fetchPropertyDetail(propertyID));
+        const property: IPropertyDetail = yield call(fetchPropertyDetail, propertyID);
         yield put(getPropertySuccess(property));
     } catch (error) {
         if (error instanceof Error) yield put(getPropertyError(error.message));
