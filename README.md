@@ -2,22 +2,36 @@
 
 # House-shop
 
+
 ## Description
 This project was created for the purpose of learning redux-saga and writing unit tests. The project utilizes a mock API that was generated using [MockAPI](https://mockapi.io).
 
-## How to Run the Project Locally
 
-To run the project, follow these steps:
 
-1. Install dependencies using the following command:
+## How to run the project
+
+###To run the project, follow these steps:
+
+1. Clone the repository using the following link:
+    ```bash
+    git clone https://github.com/Hahlina/house-shop.git
+    ```
+    or using ssh
+
+    ```bash
+    git clone https://github.com/Hahlina/house-shop.git
+    ```
+
+2. Install dependencies using the following command:
     ```bash
     npm install
     ```
 
-2. Start the project with the following command:
+3. Start the project with the following command:
     ```bash
     npm run start
     ```
+
 
 ## Running Tests
 
@@ -26,6 +40,7 @@ To run tests, run the following command
 ```bash
   npm run test
 ```
+
 
 ## Technology Stack 🛠️
 
@@ -58,4 +73,3 @@ To run tests, run the following command
 - **Prettier** - An opinionated code formatter.
 - **Stylelint** - A mighty, modern style linter.
 - **Husky** - Git hooks made easy.
-
