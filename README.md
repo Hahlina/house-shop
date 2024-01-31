@@ -1,5 +1,7 @@
 [![codecov](https://codecov.io/gh/Hahlina/house-shop/graph/badge.svg?token=5WZSANRXLY)](https://codecov.io/gh/Hahlina/house-shop)
 
+![example workflow](https://github.com/Hahlina/house-shop/actions/workflows/frontend_test.yaml/badge.svg)
+
 # House-shop
 
 
