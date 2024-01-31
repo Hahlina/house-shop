@@ -5,11 +5,7 @@ import { Container } from 'common/components';
 import { render, screen } from 'common/utils/test';
 
 describe('Container components', () => {
-    let children: ReactNode;
-
-    beforeEach(() => {
-        children = <p>Children</p>;
-    });
+    const children: ReactNode = <p>Children</p>;
 
     it('should render children', () => {
         render(<Container>{children}</Container>);

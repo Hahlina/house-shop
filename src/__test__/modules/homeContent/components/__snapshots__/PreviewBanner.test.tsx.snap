@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`PreviewBanner components should generate a math snapshot 1`] = `
+exports[`PreviewBanner components should take a snapshot 1`] = `
 <div>
   <div
     class="sc-beySPh cjvRJa"

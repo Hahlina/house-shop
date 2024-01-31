@@ -96,12 +96,12 @@ exports[`NavBreadcrumbs component should take a snapshot without custom props 1`
       class="MuiBreadcrumbs-li"
     >
       <a
-        to="/example"
+        to="/page1"
       >
         <p
           class="MuiTypography-root MuiTypography-body1 sc-hLQSwg fJWCBm css-ahj2mt-MuiTypography-root"
         >
-          Example
+          Page1
         </p>
       </a>
     </li>
@@ -115,12 +115,12 @@ exports[`NavBreadcrumbs component should take a snapshot without custom props 1`
       class="MuiBreadcrumbs-li"
     >
       <a
-        to="/example/path"
+        to="/page1/page2"
       >
         <p
           class="MuiTypography-root MuiTypography-body1 sc-hLQSwg fJWCBm css-ahj2mt-MuiTypography-root"
         >
-          Path
+          Page2
         </p>
       </a>
     </li>

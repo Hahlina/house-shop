@@ -15,7 +15,12 @@ describe('PreviewBanner components', () => {
         expect(title).toBeInTheDocument();
     });
 
-    it('should generate a math snapshot', () => {
+    it('should have height - 100dvh', () => {
+        const { container } = render(<PreviewBanner />);
+        expect(container).toHaveStyle('height: 100dvh');
+    });
+
+    it('should take a snapshot', () => {
         const { container } = render(<PreviewBanner />);
         expect(container).toMatchSnapshot();
     });

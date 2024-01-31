@@ -55,12 +55,14 @@ export const mockPropertiesDetail = [
 
 export const mockPropertyDetail = mockPropertiesDetail[0];
 
-export const mockedCustomPathNames = [
+export const mockCustomPathNames = [
     { name: 'Page 1', to: '/page1' },
     { name: 'Page 2', to: '/page1/page2' }
 ];
 
-export const mockedCustomLinkProps = { target: '_blank' };
+export const mockPathName = '/page1/page2';
+
+export const mockCustomLinkProps = { target: '_blank' };
 
 export const mockReduxStore = {
     properties: {

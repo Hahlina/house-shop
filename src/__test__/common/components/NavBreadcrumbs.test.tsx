@@ -1,31 +1,27 @@
 import { NavBreadcrumbs } from 'common/components';
 
-import { render, screen, mockedCustomLinkProps, mockedCustomPathNames } from 'common/utils/test';
-import { colors } from 'common/styles/colors';
+import { render, screen, mockCustomLinkProps, mockCustomPathNames, mockPathName } from 'common/utils/test';
+import { colors } from 'common/styles';
 
 jest.mock('react-router-dom', () => ({
     ...jest.requireActual('react-router-dom'),
     Link: 'a',
-    useLocation: () => ({ pathname: '/example/path' })
+    useLocation: () => ({ pathname: mockPathName })
 }));
 
 describe('NavBreadcrumbs component', () => {
-    beforeEach(() => {
-        jest.clearAllMocks();
-    });
-
-    it('should render component with default props without crashing', () => {
+    it('should render component with default props', () => {
         render(<NavBreadcrumbs />);
         expect(screen.getByLabelText('breadcrumbs')).toBeInTheDocument();
     });
 
-    it('should render component with customPathNames prop without crashing', () => {
-        render(<NavBreadcrumbs customPathNames={mockedCustomPathNames} />);
+    it('should render component with customPathNames props', () => {
+        render(<NavBreadcrumbs customPathNames={mockCustomPathNames} />);
         expect(screen.getByLabelText('breadcrumbs')).toBeInTheDocument();
     });
 
-    it('should render component with customPathNames prop and custom LinkProps without crashing', () => {
-        const customPathNames = mockedCustomPathNames.map((path) => ({ ...path, ...mockedCustomLinkProps }));
+    it('should render component with customPathNames prop and custom LinkProps', () => {
+        const customPathNames = mockCustomPathNames.map((path) => ({ ...path, ...mockCustomLinkProps }));
         render(<NavBreadcrumbs customPathNames={customPathNames} />);
         expect(screen.getByLabelText('breadcrumbs')).toBeInTheDocument();
     });
@@ -46,7 +42,7 @@ describe('NavBreadcrumbs component', () => {
     });
 
     it('should take a snapshot with customPathNames', () => {
-        render(<NavBreadcrumbs customPathNames={mockedCustomPathNames} />);
+        render(<NavBreadcrumbs customPathNames={mockCustomPathNames} />);
         expect(screen.getByLabelText('breadcrumbs')).toMatchSnapshot();
     });
 });

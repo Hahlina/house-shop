@@ -1,13 +1,13 @@
 import { PropertyDetailBreadCrumbs } from 'modules/propertyDetailContent/components';
 
-import { render, screen } from 'common/utils/test';
+import { render, screen, mockPathName } from 'common/utils/test';
 
 jest.mock('react-router-dom', () => ({
     ...jest.requireActual('react-router-dom'),
     Link: 'a',
     useParams: () => '1',
     useNavigate: jest.fn(),
-    useLocation: () => () => ({ pathname: '/example/path' })
+    useLocation: () => () => ({ pathname: mockPathName })
 }));
 
 describe('PropertyDetailBreadCrumbs component', () => {

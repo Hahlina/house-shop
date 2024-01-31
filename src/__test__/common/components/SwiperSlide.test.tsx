@@ -3,7 +3,7 @@ import { SwiperSlide } from 'common/components';
 import { render, screen } from 'common/utils/test';
 
 describe('SwiperSlide component', () => {
-    const slidesChild = <p>Child</p>;
+    const slideChild = <p>Child</p>;
 
     it('should render without crashing', () => {
         render(<SwiperSlide />);
@@ -11,7 +11,7 @@ describe('SwiperSlide component', () => {
     });
 
     it('should render children', () => {
-        render(<SwiperSlide>{slidesChild}</SwiperSlide>);
+        render(<SwiperSlide>{slideChild}</SwiperSlide>);
         expect(screen.getByText(/child/i)).toBeInTheDocument();
     });
 
@@ -21,7 +21,7 @@ describe('SwiperSlide component', () => {
     });
 
     it('should take a snapshot with children', () => {
-        const { container } = render(<swiper-slide>{slidesChild}</swiper-slide>);
+        const { container } = render(<swiper-slide>{slideChild}</swiper-slide>);
         expect(container).toMatchSnapshot();
     });
 });

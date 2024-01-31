@@ -41,7 +41,7 @@ describe('Properties slice', () => {
 });
 
 describe('Saga getPropertiesWorker', () => {
-    it('should have exact order with redux-saga-test-plan', async () => {
+    it('should have exact order with redux-saga-test-plan', () => {
         testSaga(getPropertiesWorker)
             .next()
             .call(fetchProperties)

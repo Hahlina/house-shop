@@ -1,6 +1,6 @@
 import { PropertyDetailContent } from 'modules/propertyDetailContent/PropertyDetailContent';
 
-import { mockReduxStore, render, screen } from 'common/utils/test';
+import { mockReduxStore, render, screen, mockPathName } from 'common/utils/test';
 import * as reduxHooks from 'common/hooks';
 
 jest.mock('react-router-dom', () => ({
@@ -8,7 +8,7 @@ jest.mock('react-router-dom', () => ({
     Link: 'a',
     useParams: () => '1',
     useNavigate: jest.fn(),
-    useLocation: () => () => ({ pathname: '/example/path' })
+    useLocation: () => () => ({ pathname: mockPathName })
 }));
 
 jest.mock('common/hooks');
