@@ -1,0 +1,54 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PropertyGallery component should take a snapshot 1`] = `
+<div>
+  <div
+    class="sc-eDLKkx bSMyoG"
+  >
+    <swiper-container
+      class="sc-jTQCzO lnbGVf"
+      data-testid="swiper-container"
+      init="false"
+    >
+      <swiper-slide
+        data-testid="swiper-slide"
+      >
+        <img
+          alt="property-0"
+          src="photo1.jpg"
+        />
+      </swiper-slide>
+      <swiper-slide
+        data-testid="swiper-slide"
+      >
+        <img
+          alt="property-1"
+          src="photo2.jpg"
+        />
+      </swiper-slide>
+    </swiper-container>
+    <swiper-container
+      class="sc-gLLuof EQlPQ"
+      data-testid="swiper-container"
+      init="false"
+    >
+      <swiper-slide
+        data-testid="swiper-slide"
+      >
+        <img
+          alt="property-thumbs-0"
+          src="photo1.jpg"
+        />
+      </swiper-slide>
+      <swiper-slide
+        data-testid="swiper-slide"
+      >
+        <img
+          alt="property-thumbs-1"
+          src="photo2.jpg"
+        />
+      </swiper-slide>
+    </swiper-container>
+  </div>
+</div>
+`;
