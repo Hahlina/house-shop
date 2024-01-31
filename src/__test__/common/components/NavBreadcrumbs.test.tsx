@@ -1,14 +1,12 @@
 import { NavBreadcrumbs } from 'common/components';
 
 import { render, screen, mockedCustomLinkProps, mockedCustomPathNames } from 'common/utils/test';
+import { colors } from 'common/styles/colors';
 
 jest.mock('react-router-dom', () => ({
     ...jest.requireActual('react-router-dom'),
+    Link: 'a',
     useLocation: () => ({ pathname: '/example/path' })
-}));
-
-jest.mock('common/components/NavBreadcrumbs/NavBreadcrumbs.styled', () => ({
-    LinkStyled: 'a'
 }));
 
 describe('NavBreadcrumbs component', () => {
@@ -32,12 +30,22 @@ describe('NavBreadcrumbs component', () => {
         expect(screen.getByLabelText('breadcrumbs')).toBeInTheDocument();
     });
 
-    it('should match snapshot with default props', () => {
+    it('should render home breadcrumb', () => {
+        render(<NavBreadcrumbs />);
+        expect(screen.getByTestId('breadcrumb-link')).toHaveAttribute('to', '/');
+    });
+
+    it('should render link item with correct color', () => {
+        render(<NavBreadcrumbs />);
+        expect(screen.getByTestId('breadcrumb-link')).toHaveStyle(`color: ${colors.black}`);
+    });
+
+    it('should take a snapshot without custom props', () => {
         render(<NavBreadcrumbs />);
         expect(screen.getByLabelText('breadcrumbs')).toMatchSnapshot();
     });
 
-    it('should match snapshot with customPathNames', () => {
+    it('should take a snapshot with customPathNames', () => {
         render(<NavBreadcrumbs customPathNames={mockedCustomPathNames} />);
         expect(screen.getByLabelText('breadcrumbs')).toMatchSnapshot();
     });

@@ -7,7 +7,7 @@ export const FullInformationCardLoader = () => {
     return (
         <FullInformationCardStyled>
             {skeletonArray.map((_, index) => (
-                <Skeleton key={index} height={30} />
+                <Skeleton data-testid="skeleton" key={index} height={30} />
             ))}
         </FullInformationCardStyled>
     );

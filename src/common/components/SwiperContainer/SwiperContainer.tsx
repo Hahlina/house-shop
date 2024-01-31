@@ -33,7 +33,7 @@ export const SwiperContainer: FC<PropsWithChildren<SwiperOptions>> = (props) => 
     }, [rest]);
 
     return (
-        <swiper-container init={false} ref={swiperRef}>
+        <swiper-container init={false} ref={swiperRef} data-testid="swiper-container">
             {children}
         </swiper-container>
     );

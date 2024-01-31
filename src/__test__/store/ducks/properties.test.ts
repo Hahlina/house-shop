@@ -1,4 +1,3 @@
-import propertiesReducer from 'store/ducks/properties';
 import {
     selectProperties,
     getProperties,
@@ -6,6 +5,7 @@ import {
     getPropertiesError,
     propertiesInitialState
 } from 'store/ducks';
+import propertiesReducer from 'store/ducks/properties';
 import { mockReduxStore } from 'common/utils/test';
 
 describe('Properties slice', () => {

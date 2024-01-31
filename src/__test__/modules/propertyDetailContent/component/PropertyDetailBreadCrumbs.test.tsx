@@ -4,13 +4,10 @@ import { render, screen } from 'common/utils/test';
 
 jest.mock('react-router-dom', () => ({
     ...jest.requireActual('react-router-dom'),
+    Link: 'a',
     useParams: () => '1',
     useNavigate: jest.fn(),
     useLocation: () => () => ({ pathname: '/example/path' })
-}));
-
-jest.mock('common/components/NavBreadcrumbs/NavBreadcrumbs.styled', () => ({
-    LinkStyled: 'a'
 }));
 
 describe('PropertyDetailBreadCrumbs component', () => {

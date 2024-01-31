@@ -1,11 +1,11 @@
 import type { FC } from 'react';
-import { useLocation, LinkProps } from 'react-router-dom';
+import { useLocation, LinkProps, Link } from 'react-router-dom';
 
-import { Breadcrumbs, Typography } from '@mui/material';
+import { Breadcrumbs } from '@mui/material';
 
 import { capitalizeFirstLetter } from 'common/utils';
 import { APP_ROUTES, EMPTY_ARRAY } from 'common/constants';
-import { LinkStyled } from './NavBreadcrumbs.styled';
+import { BreadcrumbsItemStyled } from './NavBreadcrumbs.styled';
 
 export interface ICustomPathNames extends LinkProps {
     name: string;
@@ -28,13 +28,13 @@ export const NavBreadcrumbs: FC<INavBreadcrumbs> = ({ customPathNames }) => {
 
     return (
         <Breadcrumbs aria-label="breadcrumbs" separator="/">
-            <LinkStyled to={APP_ROUTES.HOME}>
-                <Typography fontSize={18}>Home</Typography>
-            </LinkStyled>
+            <Link to={APP_ROUTES.HOME} data-testid="breadcrumb-link">
+                <BreadcrumbsItemStyled>Home</BreadcrumbsItemStyled>
+            </Link>
             {breadcrumbConfig.map(({ name, to, ...rest }) => (
-                <LinkStyled key={name} to={to} {...rest}>
-                    <Typography>{name}</Typography>
-                </LinkStyled>
+                <Link key={name} to={to} {...rest}>
+                    <BreadcrumbsItemStyled>{name}</BreadcrumbsItemStyled>
+                </Link>
             ))}
         </Breadcrumbs>
     );
