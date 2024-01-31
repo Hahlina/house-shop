@@ -1,3 +1,5 @@
+[![codecov](https://codecov.io/gh/Hahlina/house-shop/graph/badge.svg?token=5WZSANRXLY)](https://codecov.io/gh/Hahlina/house-shop)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

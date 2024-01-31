@@ -1,0 +1,52 @@
+name: Frontend-test 🧪
+
+on:
+  workflow_call:
+  push:
+    branches:
+      - main
+
+  pull_request:
+    types:
+      - opened
+      - synchronize
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: 18.x
+
+      - name: Cache
+        uses: actions/cache@v3
+        with:
+          path: ~/.npm
+          key: node-modules-${{ hashFiles('**.package-lock.json') }}
+
+
+      - name: Install dependencies
+        run: npm i
+
+      - name: Run eslint
+        run: npm run eslint
+
+      - name: Run stylelint
+        run: npm run stylelint
+
+      - name: Run jest test
+        run: npm run test
+
+      - name: Upload coverage reports to Codecov
+        uses: codecov/codecov-action@v3
+        with:
+          token: b2804d82-d468-46c8-8d42-6fa4d04bde2d
+
+      - name: Run build
+        run: npm run build
