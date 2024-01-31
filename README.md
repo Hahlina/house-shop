@@ -10,7 +10,7 @@ This project was created for the purpose of learning redux-saga and writing unit
 
 ## How to run the project
 
-###To run the project, follow these steps:
+### To run the project, follow these steps:
 
 1. Clone the repository using the following link:
     ```bash
@@ -19,7 +19,7 @@ This project was created for the purpose of learning redux-saga and writing unit
     or using ssh
 
     ```bash
-    git clone https://github.com/Hahlina/house-shop.git
+    git clone git@github.com:Hahlina/house-shop.git
     ```
 
 2. Install dependencies using the following command:
