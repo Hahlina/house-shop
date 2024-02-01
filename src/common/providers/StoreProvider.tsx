@@ -1,0 +1,6 @@
+import type { FC, PropsWithChildren } from 'react';
+import { Provider } from 'react-redux';
+
+import { appStore } from 'store';
+
+export const StoreProvider: FC<PropsWithChildren> = ({ children }) => <Provider store={appStore}>{children}</Provider>;

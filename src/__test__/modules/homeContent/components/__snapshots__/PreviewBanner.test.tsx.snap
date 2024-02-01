@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PreviewBanner components should take a snapshot 1`] = `
+<div>
+  <div
+    class="sc-beySPh cjvRJa"
+  >
+    <img
+      alt="house"
+      class="preview-image"
+      src="/images/previewImage.jpg"
+    />
+    <h1
+      class="MuiTypography-root MuiTypography-body1 preview-title css-ahj2mt-MuiTypography-root"
+    >
+      <p
+        class="MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root"
+      >
+        Let's Find Your
+      </p>
+      <p
+        class="MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root"
+      >
+        Dream House
+      </p>
+    </h1>
+  </div>
+</div>
+`;

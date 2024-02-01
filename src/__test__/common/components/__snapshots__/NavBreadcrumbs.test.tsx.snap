@@ -1,0 +1,129 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NavBreadcrumbs component should take a snapshot with customPathNames 1`] = `
+<nav
+  aria-label="breadcrumbs"
+  class="MuiTypography-root MuiTypography-body1 MuiBreadcrumbs-root css-63vwl1-MuiTypography-root-MuiBreadcrumbs-root"
+>
+  <ol
+    class="MuiBreadcrumbs-ol css-4pdmu4-MuiBreadcrumbs-ol"
+  >
+    <li
+      class="MuiBreadcrumbs-li"
+    >
+      <a
+        data-testid="breadcrumb-link"
+        to="/"
+      >
+        <p
+          class="MuiTypography-root MuiTypography-body1 sc-hLQSwg fJWCBm css-ahj2mt-MuiTypography-root"
+        >
+          Home
+        </p>
+      </a>
+    </li>
+    <li
+      aria-hidden="true"
+      class="MuiBreadcrumbs-separator css-1wuw8dw-MuiBreadcrumbs-separator"
+    >
+      /
+    </li>
+    <li
+      class="MuiBreadcrumbs-li"
+    >
+      <a
+        to="/page1"
+      >
+        <p
+          class="MuiTypography-root MuiTypography-body1 sc-hLQSwg fJWCBm css-ahj2mt-MuiTypography-root"
+        >
+          Page 1
+        </p>
+      </a>
+    </li>
+    <li
+      aria-hidden="true"
+      class="MuiBreadcrumbs-separator css-1wuw8dw-MuiBreadcrumbs-separator"
+    >
+      /
+    </li>
+    <li
+      class="MuiBreadcrumbs-li"
+    >
+      <a
+        to="/page1/page2"
+      >
+        <p
+          class="MuiTypography-root MuiTypography-body1 sc-hLQSwg fJWCBm css-ahj2mt-MuiTypography-root"
+        >
+          Page 2
+        </p>
+      </a>
+    </li>
+  </ol>
+</nav>
+`;
+
+exports[`NavBreadcrumbs component should take a snapshot without custom props 1`] = `
+<nav
+  aria-label="breadcrumbs"
+  class="MuiTypography-root MuiTypography-body1 MuiBreadcrumbs-root css-63vwl1-MuiTypography-root-MuiBreadcrumbs-root"
+>
+  <ol
+    class="MuiBreadcrumbs-ol css-4pdmu4-MuiBreadcrumbs-ol"
+  >
+    <li
+      class="MuiBreadcrumbs-li"
+    >
+      <a
+        data-testid="breadcrumb-link"
+        to="/"
+      >
+        <p
+          class="MuiTypography-root MuiTypography-body1 sc-hLQSwg fJWCBm css-ahj2mt-MuiTypography-root"
+        >
+          Home
+        </p>
+      </a>
+    </li>
+    <li
+      aria-hidden="true"
+      class="MuiBreadcrumbs-separator css-1wuw8dw-MuiBreadcrumbs-separator"
+    >
+      /
+    </li>
+    <li
+      class="MuiBreadcrumbs-li"
+    >
+      <a
+        to="/page1"
+      >
+        <p
+          class="MuiTypography-root MuiTypography-body1 sc-hLQSwg fJWCBm css-ahj2mt-MuiTypography-root"
+        >
+          Page1
+        </p>
+      </a>
+    </li>
+    <li
+      aria-hidden="true"
+      class="MuiBreadcrumbs-separator css-1wuw8dw-MuiBreadcrumbs-separator"
+    >
+      /
+    </li>
+    <li
+      class="MuiBreadcrumbs-li"
+    >
+      <a
+        to="/page1/page2"
+      >
+        <p
+          class="MuiTypography-root MuiTypography-body1 sc-hLQSwg fJWCBm css-ahj2mt-MuiTypography-root"
+        >
+          Page2
+        </p>
+      </a>
+    </li>
+  </ol>
+</nav>
+`;

@@ -1,0 +1,158 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PropertyDetailContent page should take a snapshot 1`] = `
+<div>
+  <div
+    class="MuiContainer-root MuiContainer-maxWidthLg css-1oqqzyl-MuiContainer-root"
+    data-testid="container-id"
+  >
+    <div
+      class="sc-qZrbh bfdSXZ"
+    >
+      <nav
+        aria-label="breadcrumbs"
+        class="MuiTypography-root MuiTypography-body1 MuiBreadcrumbs-root css-63vwl1-MuiTypography-root-MuiBreadcrumbs-root"
+      >
+        <ol
+          class="MuiBreadcrumbs-ol css-4pdmu4-MuiBreadcrumbs-ol"
+        >
+          <li
+            class="MuiBreadcrumbs-li"
+          >
+            <a
+              data-testid="breadcrumb-link"
+              to="/"
+            >
+              <p
+                class="MuiTypography-root MuiTypography-body1 sc-hLQSwg fJWCBm css-ahj2mt-MuiTypography-root"
+              >
+                Home
+              </p>
+            </a>
+          </li>
+          <li
+            aria-hidden="true"
+            class="MuiBreadcrumbs-separator css-1wuw8dw-MuiBreadcrumbs-separator"
+          >
+            /
+          </li>
+          <li
+            class="MuiBreadcrumbs-li"
+          >
+            <a
+              to="#"
+            >
+              <p
+                class="MuiTypography-root MuiTypography-body1 sc-hLQSwg fJWCBm css-ahj2mt-MuiTypography-root"
+              >
+                Properties
+              </p>
+            </a>
+          </li>
+          <li
+            aria-hidden="true"
+            class="MuiBreadcrumbs-separator css-1wuw8dw-MuiBreadcrumbs-separator"
+          >
+            /
+          </li>
+          <li
+            class="MuiBreadcrumbs-li"
+          >
+            <a
+              to="/property/"
+            >
+              <p
+                class="MuiTypography-root MuiTypography-body1 sc-hLQSwg fJWCBm css-ahj2mt-MuiTypography-root"
+              />
+            </a>
+          </li>
+        </ol>
+      </nav>
+    </div>
+    <div
+      class="sc-fsYfdN huiuZN"
+    >
+      <div
+        class="sc-eDLKkx bSMyoG"
+      >
+        <swiper-container
+          class="sc-jTQCzO lnbGVf"
+          data-testid="swiper-container"
+          init="false"
+        >
+          <swiper-slide
+            data-testid="swiper-slide"
+          >
+            <img
+              alt="property-0"
+              src="photo1.jpg"
+            />
+          </swiper-slide>
+          <swiper-slide
+            data-testid="swiper-slide"
+          >
+            <img
+              alt="property-1"
+              src="photo2.jpg"
+            />
+          </swiper-slide>
+        </swiper-container>
+        <swiper-container
+          class="sc-gLLuof EQlPQ"
+          data-testid="swiper-container"
+          init="false"
+        >
+          <swiper-slide
+            data-testid="swiper-slide"
+          >
+            <img
+              alt="property-thumbs-0"
+              src="photo1.jpg"
+            />
+          </swiper-slide>
+          <swiper-slide
+            data-testid="swiper-slide"
+          >
+            <img
+              alt="property-thumbs-1"
+              src="photo2.jpg"
+            />
+          </swiper-slide>
+        </swiper-container>
+      </div>
+      <div
+        class="sc-iBdnpw hdhuIM"
+      >
+        <h5
+          class="MuiTypography-root MuiTypography-h5 css-bezmlo-MuiTypography-root"
+        >
+          Cozy House near the Forest
+        </h5>
+        <h6
+          class="MuiTypography-root MuiTypography-h6 css-2ulfj5-MuiTypography-root"
+        >
+          Address: 
+          Green Street, 123
+        </h6>
+        <h6
+          class="MuiTypography-root MuiTypography-h6 css-2ulfj5-MuiTypography-root"
+        >
+          Seller: 
+          John Doe
+        </h6>
+        <h6
+          class="MuiTypography-root MuiTypography-h6 css-2ulfj5-MuiTypography-root"
+        >
+          Description: 
+          A charming house nestled near a beautiful forest. Perfect for nature lovers.
+        </h6>
+        <p
+          class="MuiTypography-root MuiTypography-body1 price css-ahj2mt-MuiTypography-root"
+        >
+          $250,000.00
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+`;

@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SwiperContainer component should take a snapshot with children 1`] = `
+<div>
+  <swiper-container
+    data-testid="swiper-container"
+    init="false"
+  >
+    <p>
+      Child
+    </p>
+  </swiper-container>
+</div>
+`;
+
+exports[`SwiperContainer component should take a snapshot without children 1`] = `
+<div>
+  <swiper-container
+    data-testid="swiper-container"
+    init="false"
+  />
+</div>
+`;

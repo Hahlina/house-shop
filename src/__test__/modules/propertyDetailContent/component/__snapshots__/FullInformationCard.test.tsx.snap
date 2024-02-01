@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FullInformationCard component should take a snapshot 1`] = `
+<div>
+  <div
+    class="sc-iBdnpw hdhuIM"
+  >
+    <h5
+      class="MuiTypography-root MuiTypography-h5 css-bezmlo-MuiTypography-root"
+    >
+      Cozy House near the Forest
+    </h5>
+    <h6
+      class="MuiTypography-root MuiTypography-h6 css-2ulfj5-MuiTypography-root"
+    >
+      Address: 
+      Green Street, 123
+    </h6>
+    <h6
+      class="MuiTypography-root MuiTypography-h6 css-2ulfj5-MuiTypography-root"
+    >
+      Seller: 
+      John Doe
+    </h6>
+    <h6
+      class="MuiTypography-root MuiTypography-h6 css-2ulfj5-MuiTypography-root"
+    >
+      Description: 
+      A charming house nestled near a beautiful forest. Perfect for nature lovers.
+    </h6>
+    <p
+      class="MuiTypography-root MuiTypography-body1 price css-ahj2mt-MuiTypography-root"
+    >
+      $250,000.00
+    </p>
+  </div>
+</div>
+`;

@@ -1,0 +1,45 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FullInformationCardLoader should take a snapshot 1`] = `
+<div>
+  <div
+    class="sc-eDLKkx bSMyoG"
+    data-testid="property-gallery-loader"
+  >
+    <span
+      class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1i79rz3-MuiSkeleton-root"
+      data-testid="main-photo"
+      style="height: 600px;"
+    />
+    <div
+      class="MuiBox-root css-1brzdu3"
+    >
+      <span
+        class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1slpgtv-MuiSkeleton-root"
+        data-testid="skeleton"
+        style="width: 100px; height: 100px;"
+      />
+      <span
+        class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1slpgtv-MuiSkeleton-root"
+        data-testid="skeleton"
+        style="width: 100px; height: 100px;"
+      />
+      <span
+        class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1slpgtv-MuiSkeleton-root"
+        data-testid="skeleton"
+        style="width: 100px; height: 100px;"
+      />
+      <span
+        class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1slpgtv-MuiSkeleton-root"
+        data-testid="skeleton"
+        style="width: 100px; height: 100px;"
+      />
+      <span
+        class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1slpgtv-MuiSkeleton-root"
+        data-testid="skeleton"
+        style="width: 100px; height: 100px;"
+      />
+    </div>
+  </div>
+</div>
+`;
