@@ -21,7 +21,7 @@ describe('SwiperSlide component', () => {
     });
 
     it('should take a snapshot with children', () => {
-        const { container } = render(<swiper-slide>{slideChild}</swiper-slide>);
+        const { container } = render(<SwiperSlide>{slideChild}</SwiperSlide>);
         expect(container).toMatchSnapshot();
     });
 });

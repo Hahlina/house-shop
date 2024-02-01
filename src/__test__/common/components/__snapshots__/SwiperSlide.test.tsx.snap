@@ -2,7 +2,9 @@
 
 exports[`SwiperSlide component should take a snapshot with children 1`] = `
 <div>
-  <swiper-slide>
+  <swiper-slide
+    data-testid="swiper-slide"
+  >
     <p>
       Child
     </p>
