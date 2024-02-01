@@ -21,4 +21,12 @@ describe('fetchApi', () => {
         const result = fetchApi(url, options);
         await expect(result).rejects.toThrow('Network error');
     });
+
+    it('should handle non-JSON response', async () => {
+        global.fetch = jest.fn().mockResolvedValue({
+            json: jest.fn().mockRejectedValue(new Error('Unexpected JSON response'))
+        });
+        const result = fetchApi(url, options);
+        await expect(result).rejects.toThrow('Unexpected JSON response');
+    });
 });

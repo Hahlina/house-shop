@@ -15,14 +15,14 @@ interface IPropertyDetailState {
 
 export const propertyDetailInitialState: IPropertyDetailState = {
     data: {
-        id: null,
-        title: null,
+        id: '',
+        title: '',
         price: null,
-        address: null,
-        preview_image: null,
-        photos: null,
-        description: null,
-        seller: null
+        address: '',
+        preview_image: '',
+        photos: [],
+        description: '',
+        seller: ''
     },
     loading: false,
     error: null

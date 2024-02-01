@@ -11,7 +11,7 @@ import { PropertyCardStyled, CardMediaStyled, CardContentStyled } from './Proper
 interface IPropertyCard extends IProperty {}
 
 export const PropertyCard: FC<IPropertyCard> = ({ address, preview_image, price, title, id }) => {
-    const convertedPriceToUsd = convertPrice(price);
+    const convertedPriceToUsd = convertPrice(price ?? 0);
 
     return (
         <Link to={`${APP_ROUTES.PROPERTY}/${id}`}>
