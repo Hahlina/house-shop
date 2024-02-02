@@ -1,13 +1,15 @@
 import { createBrowserRouter, Navigate } from 'react-router-dom';
 
 import { HomeContent, PropertyDetailContent } from 'modules';
+import { ErrorPage } from 'common/components';
 
 import { APP_ROUTES } from 'common/constants';
 
 export const router = createBrowserRouter([
     {
         path: APP_ROUTES.HOME,
-        element: <HomeContent />
+        element: <HomeContent />,
+        errorElement: <ErrorPage />
     },
     {
         path: `${APP_ROUTES.PROPERTY}`,
