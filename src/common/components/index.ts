@@ -6,3 +6,5 @@ export * from './NavBreadcrumbs/NavBreadcrumbs';
 export * from './Container/Container';
 export * from './Image/Image';
 export * from './ErrorPage/ErrorPage';
+export * from './SomethingWentWrong/SomethingWentWrong';
+export * from './NothingFound/NothingFound';

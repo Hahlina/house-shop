@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 
 import { Box, Typography } from '@mui/material';
-import { PropertyCard } from 'common/components';
+import { NothingFound, PropertyCard, SomethingWentWrong } from 'common/components';
 import { PropertiesListLoader } from './PropertiesListLoader';
 
 import { useAppDispatch, useAppSelector } from 'common/hooks';
@@ -10,13 +10,15 @@ import { PropertiesListStyled } from './PropertiesList.styled';
 
 export const PropertiesList = () => {
     const dispatch = useAppDispatch();
-    const { data, loading } = useAppSelector(selectProperties);
+    const { data, loading, error } = useAppSelector(selectProperties);
 
     useEffect(() => {
         dispatch(getProperties());
     }, [dispatch]);
 
     if (loading && !data.length) return <PropertiesListLoader />;
+    if (error) return <SomethingWentWrong />;
+    if (!data.length) return <NothingFound />;
 
     return (
         <PropertiesListStyled>
