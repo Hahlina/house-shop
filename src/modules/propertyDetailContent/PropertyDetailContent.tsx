@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import { useParams } from 'react-router-dom';
+import { ScrollRestoration, useParams } from 'react-router-dom';
 
 import { Container, ErrorPage } from 'common/components';
 import {
@@ -28,6 +28,7 @@ export const PropertyDetailContent = () => {
 
     return (
         <Container>
+            <ScrollRestoration />
             <PropertyDetailBreadCrumbs />
             <PropertyDetailContentStyled>
                 {photos && <PropertyGallery {...{ photos }} />}

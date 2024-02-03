@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { Skeleton } from '@mui/material';
 
 export const PropertiesListStyled = styled.div`
-    margin: 100px 0;
+    margin: 50px 0;
 
     p.list-title {
         position: relative;
