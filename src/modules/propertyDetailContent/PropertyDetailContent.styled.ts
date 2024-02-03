@@ -7,7 +7,7 @@ export const PropertyDetailContentStyled = styled.div`
     flex-direction: column;
     height: 100%;
     gap: 50px;
-    margin: 50px 0;
+    margin: 25px 0;
 
     ${({ theme: { media } }) => media.l`
         flex-direction: row;

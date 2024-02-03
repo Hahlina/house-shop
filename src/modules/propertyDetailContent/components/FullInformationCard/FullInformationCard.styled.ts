@@ -13,8 +13,15 @@ export const FullInformationCardStyled = styled.div`
     padding: 40px;
     background: ${({ theme: { colors } }) => colors.white};
 
+    & > * {
+        display: flex;
+        gap: 5px;
+    }
+
     p.price {
-        text-align: center;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
         font-size: 30px;
         color: ${({ theme: { colors } }) => colors.orange};
     }
