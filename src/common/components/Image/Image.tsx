@@ -8,7 +8,7 @@ interface IImageProps extends ImgHTMLAttributes<HTMLImageElement> {
 }
 
 export const Image = forwardRef((props: IImageProps, ref: ForwardedRef<HTMLImageElement>) => {
-    const { alt, src, withPlaceholder = true, ...restProps } = props;
+    const { alt, src, withPlaceholder = false, ...restProps } = props;
     const {
         handleImageOnLoad,
         css: { fullSize, thumbnail },

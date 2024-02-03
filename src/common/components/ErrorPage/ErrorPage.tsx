@@ -9,7 +9,7 @@ import { ErrorInfoStyled, ErrorPageStyled, ErrorContent } from './ErrorPage.styl
 export const ErrorPage = () => (
     <ErrorPageStyled>
         <ErrorContent>
-            <Image src="/images/404.png" withPlaceholder={false} />
+            <Image src="/images/404.png" />
             <ErrorInfoStyled>
                 <Typography className="code">Opps...404</Typography>
                 <Link to={APP_ROUTES.HOME}>

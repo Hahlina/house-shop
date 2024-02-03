@@ -4,7 +4,6 @@ import type { Swiper as ISwiperRef } from 'swiper/types';
 import type { SwiperOptions } from 'swiper/types/swiper-options';
 
 import { EMPTY_OBJECT } from 'common/constants';
-import { colors } from 'common/styles';
 
 export type TSwiperRef = HTMLElement & { swiper: ISwiperRef; initialize: () => void };
 
@@ -16,14 +15,6 @@ export const SwiperContainer: FC<PropsWithChildren<SwiperOptions>> = (props) => 
         register();
 
         const params: SwiperOptions = {
-            injectStyles: [
-                `.swiper-button-next, .swiper-button-prev {
-                  color: ${colors.orange};
-                 }
-                 .swiper-pagination-bullet {
-                  background: ${colors.orange};
-                 }`
-            ],
             ...rest
         };
 

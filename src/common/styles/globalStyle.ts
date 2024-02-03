@@ -2,6 +2,12 @@ import { createGlobalStyle } from 'styled-components';
 import { normalize } from 'styled-normalize';
 
 export const GlobalStyle = createGlobalStyle`
+  :root {
+      --swiper-navigation-color: ${({ theme: { colors } }) => colors.orange};
+      --swiper-pagination-color: ${({ theme: { colors } }) => colors.orange};
+      --swiper-preloader-color: ${({ theme: { colors } }) => colors.orange};
+  }
+  
   ${normalize}
   
   html {

@@ -31,8 +31,8 @@ export const NavBreadcrumbs: FC<INavBreadcrumbs> = ({ customPathNames }) => {
             <Link to={APP_ROUTES.HOME} data-testid="breadcrumb-link">
                 <BreadcrumbsItemStyled>Home</BreadcrumbsItemStyled>
             </Link>
-            {breadcrumbConfig.map(({ name, to, ...rest }) => (
-                <Link key={name} to={to} {...rest}>
+            {breadcrumbConfig.map(({ name, to, ...restProps }) => (
+                <Link key={name} to={to} {...restProps}>
                     <BreadcrumbsItemStyled>{name}</BreadcrumbsItemStyled>
                 </Link>
             ))}

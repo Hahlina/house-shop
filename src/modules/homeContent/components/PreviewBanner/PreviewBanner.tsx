@@ -5,8 +5,8 @@ import { PreviewBannerStyled, TitleContentStyled, GoDawnPointBlock } from './Pre
 
 export const PreviewBanner = () => (
     <PreviewBannerStyled>
-        <Image className="logo" src="/images/logo.svg" alt="logo" withPlaceholder={false} />
-        <Image className="preview-image" src="/images/previewImage.webp" alt="home-banner" />
+        <Image className="logo" src="/images/logo.svg" alt="logo" />
+        <Image className="preview-image" src="/images/previewImage.webp" alt="home-banner" withPlaceholder />
         <TitleContentStyled>
             <Typography className="preview-title">Let's find your dream house</Typography>
             <GoDawnPointBlock>

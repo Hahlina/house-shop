@@ -17,7 +17,6 @@ export const PropertyDetailContent = () => {
     const { id } = useParams();
     const dispatch = useAppDispatch();
     const { data: property, loading, error } = useAppSelector(selectPropertyDetail);
-
     const { photos, ...restInformation } = property || {};
 
     useEffect(() => {
@@ -25,7 +24,7 @@ export const PropertyDetailContent = () => {
     }, [dispatch, id]);
 
     if (loading) return <PropertyDetailContentLoader />;
-    if (error || !property) return <ErrorPage />;
+    if (error) return <ErrorPage />;
 
     return (
         <Container>

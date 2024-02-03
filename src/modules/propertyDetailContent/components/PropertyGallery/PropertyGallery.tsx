@@ -1,7 +1,7 @@
 import { type FC, useState } from 'react';
 import type { Swiper } from 'swiper/types';
 
-import { SwiperSlide } from 'common/components';
+import { Image, SwiperSlide } from 'common/components';
 
 import { StyledGalleryWrapper, StyledSwiperMainContainer, StyledSwiperThumbContainer } from './PropertyGallery.styled';
 
@@ -14,14 +14,21 @@ export const PropertyGallery: FC<IPropertyGallery> = ({ photos }) => {
 
     return (
         <StyledGalleryWrapper>
-            <StyledSwiperMainContainer thumbs={{ swiper: thumbsRef }} navigation pagination>
+            <StyledSwiperMainContainer
+                thumbs={{ swiper: thumbsRef }}
+                navigation
+                pagination
+                keyboard
+                lazyPreloadPrevNext={1}
+            >
                 {photos?.map((photo, index) => (
-                    <SwiperSlide key={`photo-${index}`}>
-                        <img src={photo} alt={`property-${index}`} />
+                    <SwiperSlide key={`photo-${index}`} lazy>
+                        <Image src={photo} alt={`property-${index}`} loading="lazy" />
                     </SwiperSlide>
                 ))}
             </StyledSwiperMainContainer>
             <StyledSwiperThumbContainer
+                lazyPreloadPrevNext={1}
                 slidesPerView="auto"
                 spaceBetween={20}
                 freeMode
@@ -31,8 +38,8 @@ export const PropertyGallery: FC<IPropertyGallery> = ({ photos }) => {
                 }}
             >
                 {photos?.map((photo, index) => (
-                    <SwiperSlide key={`thumbs-${index}`}>
-                        <img src={photo} alt={`property-thumbs-${index}`} />
+                    <SwiperSlide lazy key={`thumbs-${index}`}>
+                        <Image src={photo} alt={`property-thumbs-${index}`} loading="lazy" />
                     </SwiperSlide>
                 ))}
             </StyledSwiperThumbContainer>

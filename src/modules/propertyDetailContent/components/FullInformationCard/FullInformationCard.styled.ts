@@ -9,7 +9,7 @@ export const FullInformationCardStyled = styled.div`
     max-height: 600px;
     width: 100%;
     height: 100%;
-    border-radius: 20px;
+    border-radius: 10px;
     padding: 40px;
     background: ${({ theme: { colors } }) => colors.white};
 
