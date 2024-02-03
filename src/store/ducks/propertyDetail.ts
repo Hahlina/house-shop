@@ -8,22 +8,13 @@ import type { IPropertyDetail } from 'common/types';
 export const GET_PROPERTY_DETAIL = 'propertyDetail/getProperty';
 
 interface IPropertyDetailState {
-    data: IPropertyDetail;
+    data: IPropertyDetail | null;
     loading: boolean;
     error: null | string;
 }
 
 export const propertyDetailInitialState: IPropertyDetailState = {
-    data: {
-        id: '',
-        title: '',
-        price: null,
-        address: '',
-        preview_image: '',
-        photos: [],
-        description: '',
-        seller: ''
-    },
+    data: null,
     loading: false,
     error: null
 };

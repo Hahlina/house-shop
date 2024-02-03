@@ -6,7 +6,7 @@ import { convertPrice } from 'common/utils';
 import type { IPropertyDetail } from 'common/types';
 import { FullInformationCardStyled } from './FullInformationCard.styled';
 
-interface IFullInformationCard extends Omit<IPropertyDetail, 'photos'> {}
+interface IFullInformationCard extends Omit<Partial<IPropertyDetail>, 'photos'> {}
 
 export const FullInformationCard: FC<IFullInformationCard> = ({ address, description, price, seller, title }) => {
     const convertedPriceToUsd: string = convertPrice(price ?? 0);
