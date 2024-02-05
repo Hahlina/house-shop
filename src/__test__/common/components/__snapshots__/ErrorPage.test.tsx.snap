@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ErrorPage component should take a snapshot 1`] = `
+<div>
+  <div
+    class="sc-eDLKkx mMCzY"
+  >
+    <div
+      class="sc-jTQCzO bRQGNi"
+    >
+      <img
+        src="/images/404.png"
+        style="visibility: visible; transition: visibility 200ms ease-out 700ms;"
+      />
+      <div
+        class="sc-gLLuof fuTWTb"
+      >
+        <p
+          class="MuiTypography-root MuiTypography-body1 code css-ahj2mt-MuiTypography-root"
+        >
+          Opps...404
+        </p>
+        <a
+          href="/"
+        >
+          <button
+            class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedError MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-root MuiButton-contained MuiButton-containedError MuiButton-sizeMedium MuiButton-containedSizeMedium css-1sszw6i-MuiButtonBase-root-MuiButton-root"
+            tabindex="0"
+            type="button"
+          >
+            Go home
+            <span
+              class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+            />
+          </button>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+`;
