@@ -1,0 +1,191 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HomePage should take a snapshot 1`] = `
+<div>
+  <div
+    class="sc-qZrbh jlkvTM"
+  >
+    <img
+      alt="logo"
+      class="logo"
+      src="/images/logo.svg"
+    />
+    <img
+      alt="home-banner"
+      class="preview-image"
+      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAIAAAAmkwkpAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAP0lEQVR4nAE0AMv/AAAHEYuepKGtsyYyOABEVVWtsLagm6STtK8Ap6ely8G2//TW6v/1AKqtoM+9n/3fxdzTxZdEHmCoP789AAAAAElFTkSuQmCC"
+    />
+    <div
+      class="sc-jsEeTM EioFe"
+    >
+      <p
+        class="MuiTypography-root MuiTypography-body1 preview-title css-ahj2mt-MuiTypography-root"
+      >
+        Let's find your dream house
+      </p>
+      <div
+        class="sc-kFCroH iGeivr"
+      >
+        <div
+          class="arrow MuiBox-root css-0"
+        />
+        <p
+          class="MuiTypography-root MuiTypography-body1 scroll-dawn-text css-ahj2mt-MuiTypography-root"
+        >
+          scroll dawn to buy your home
+        </p>
+      </div>
+    </div>
+  </div>
+  <div
+    class="MuiContainer-root MuiContainer-maxWidthLg css-1oqqzyl-MuiContainer-root"
+    data-testid="container-id"
+  >
+    <div
+      class="sc-irLvIq iNfvWW"
+    >
+      <p
+        class="MuiTypography-root MuiTypography-body1 list-title css-ahj2mt-MuiTypography-root"
+      >
+        List of properties
+      </p>
+      <div
+        class="card-list MuiBox-root css-0"
+      >
+        <a
+          href="/property/1"
+        >
+          <div
+            class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root sc-beySPh exFZaj css-bhp9pd-MuiPaper-root-MuiCard-root"
+          >
+            <button
+              class="MuiButtonBase-root MuiCardActionArea-root css-1oitmrd-MuiButtonBase-root-MuiCardActionArea-root"
+              tabindex="0"
+              type="button"
+            >
+              <div
+                class="MuiCardMedia-root sc-guDLey kpUfML css-16cvb1l-MuiCardMedia-root"
+                role="img"
+                style="background-image: url(image.jpg);"
+              />
+              <div
+                class="MuiCardContent-root sc-dmyCSP bEZSpk css-46bh2p-MuiCardContent-root"
+              >
+                <p
+                  class="MuiTypography-root MuiTypography-body1 title css-ahj2mt-MuiTypography-root"
+                >
+                  Beautiful House
+                </p>
+                <p
+                  class="MuiTypography-root MuiTypography-body1 address css-ahj2mt-MuiTypography-root"
+                >
+                  3 Main Staks
+                </p>
+                <p
+                  class="MuiTypography-root MuiTypography-body1 price css-ahj2mt-MuiTypography-root"
+                >
+                  $100,000.00
+                </p>
+              </div>
+              <span
+                class="MuiCardActionArea-focusHighlight css-1v2exvi-MuiCardActionArea-focusHighlight"
+              />
+              <span
+                class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+              />
+            </button>
+          </div>
+        </a>
+        <a
+          href="/property/2"
+        >
+          <div
+            class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root sc-beySPh exFZaj css-bhp9pd-MuiPaper-root-MuiCard-root"
+          >
+            <button
+              class="MuiButtonBase-root MuiCardActionArea-root css-1oitmrd-MuiButtonBase-root-MuiCardActionArea-root"
+              tabindex="0"
+              type="button"
+            >
+              <div
+                class="MuiCardMedia-root sc-guDLey kpUfML css-16cvb1l-MuiCardMedia-root"
+                role="img"
+                style="background-image: url(image_2.jpg);"
+              />
+              <div
+                class="MuiCardContent-root sc-dmyCSP bEZSpk css-46bh2p-MuiCardContent-root"
+              >
+                <p
+                  class="MuiTypography-root MuiTypography-body1 title css-ahj2mt-MuiTypography-root"
+                >
+                  Less Beautiful House
+                </p>
+                <p
+                  class="MuiTypography-root MuiTypography-body1 address css-ahj2mt-MuiTypography-root"
+                >
+                  123 Main St
+                </p>
+                <p
+                  class="MuiTypography-root MuiTypography-body1 price css-ahj2mt-MuiTypography-root"
+                >
+                  $6,600,000.00
+                </p>
+              </div>
+              <span
+                class="MuiCardActionArea-focusHighlight css-1v2exvi-MuiCardActionArea-focusHighlight"
+              />
+              <span
+                class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+              />
+            </button>
+          </div>
+        </a>
+        <a
+          href="/property/3"
+        >
+          <div
+            class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root sc-beySPh exFZaj css-bhp9pd-MuiPaper-root-MuiCard-root"
+          >
+            <button
+              class="MuiButtonBase-root MuiCardActionArea-root css-1oitmrd-MuiButtonBase-root-MuiCardActionArea-root"
+              tabindex="0"
+              type="button"
+            >
+              <div
+                class="MuiCardMedia-root sc-guDLey kpUfML css-16cvb1l-MuiCardMedia-root"
+                role="img"
+                style="background-image: url(image_2.jpg);"
+              />
+              <div
+                class="MuiCardContent-root sc-dmyCSP bEZSpk css-46bh2p-MuiCardContent-root"
+              >
+                <p
+                  class="MuiTypography-root MuiTypography-body1 title css-ahj2mt-MuiTypography-root"
+                >
+                  More Beautiful House
+                </p>
+                <p
+                  class="MuiTypography-root MuiTypography-body1 address css-ahj2mt-MuiTypography-root"
+                >
+                  USA
+                </p>
+                <p
+                  class="MuiTypography-root MuiTypography-body1 price css-ahj2mt-MuiTypography-root"
+                >
+                  $300,000.00
+                </p>
+              </div>
+              <span
+                class="MuiCardActionArea-focusHighlight css-1v2exvi-MuiCardActionArea-focusHighlight"
+              />
+              <span
+                class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+              />
+            </button>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+`;
