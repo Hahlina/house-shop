@@ -3,7 +3,7 @@
 exports[`PropertyCard should take a snapshot 1`] = `
 <div>
   <a
-    to="property/123"
+    href="/property/123"
   >
     <div
       class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root sc-beySPh exFZaj css-bhp9pd-MuiPaper-root-MuiCard-root"
@@ -19,7 +19,7 @@ exports[`PropertyCard should take a snapshot 1`] = `
           style="background-image: url(image.jpg);"
         />
         <div
-          class="MuiCardContent-root sc-dmyCSP kacSBo css-46bh2p-MuiCardContent-root"
+          class="MuiCardContent-root sc-dmyCSP bEZSpk css-46bh2p-MuiCardContent-root"
         >
           <p
             class="MuiTypography-root MuiTypography-body1 title css-ahj2mt-MuiTypography-root"

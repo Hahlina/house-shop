@@ -13,7 +13,7 @@ exports[`NavBreadcrumbs component should take a snapshot with customPathNames 1`
     >
       <a
         data-testid="breadcrumb-link"
-        to="/"
+        href="/"
       >
         <p
           class="MuiTypography-root MuiTypography-body1 sc-hLQSwg fJWCBm css-ahj2mt-MuiTypography-root"
@@ -32,7 +32,7 @@ exports[`NavBreadcrumbs component should take a snapshot with customPathNames 1`
       class="MuiBreadcrumbs-li"
     >
       <a
-        to="/page1"
+        href="/page1"
       >
         <p
           class="MuiTypography-root MuiTypography-body1 sc-hLQSwg fJWCBm css-ahj2mt-MuiTypography-root"
@@ -51,7 +51,7 @@ exports[`NavBreadcrumbs component should take a snapshot with customPathNames 1`
       class="MuiBreadcrumbs-li"
     >
       <a
-        to="/page1/page2"
+        href="/page1/page2"
       >
         <p
           class="MuiTypography-root MuiTypography-body1 sc-hLQSwg fJWCBm css-ahj2mt-MuiTypography-root"
@@ -77,50 +77,12 @@ exports[`NavBreadcrumbs component should take a snapshot without custom props 1`
     >
       <a
         data-testid="breadcrumb-link"
-        to="/"
+        href="/"
       >
         <p
           class="MuiTypography-root MuiTypography-body1 sc-hLQSwg fJWCBm css-ahj2mt-MuiTypography-root"
         >
           Home
-        </p>
-      </a>
-    </li>
-    <li
-      aria-hidden="true"
-      class="MuiBreadcrumbs-separator css-1wuw8dw-MuiBreadcrumbs-separator"
-    >
-      /
-    </li>
-    <li
-      class="MuiBreadcrumbs-li"
-    >
-      <a
-        to="/page1"
-      >
-        <p
-          class="MuiTypography-root MuiTypography-body1 sc-hLQSwg fJWCBm css-ahj2mt-MuiTypography-root"
-        >
-          Page1
-        </p>
-      </a>
-    </li>
-    <li
-      aria-hidden="true"
-      class="MuiBreadcrumbs-separator css-1wuw8dw-MuiBreadcrumbs-separator"
-    >
-      /
-    </li>
-    <li
-      class="MuiBreadcrumbs-li"
-    >
-      <a
-        to="/page1/page2"
-      >
-        <p
-          class="MuiTypography-root MuiTypography-body1 sc-hLQSwg fJWCBm css-ahj2mt-MuiTypography-root"
-        >
-          Page2
         </p>
       </a>
     </li>

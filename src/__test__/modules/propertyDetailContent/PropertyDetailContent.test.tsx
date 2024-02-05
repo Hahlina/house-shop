@@ -1,54 +1,59 @@
 import { PropertyDetailContent } from 'modules/propertyDetailContent/PropertyDetailContent';
 
-import { mockReduxStore, render, screen, mockPathName } from 'common/utils/test';
-import * as reduxHooks from 'common/hooks';
+import { mockReduxStore, renderWithRoutes, screen } from 'common/utils/test';
+import * as hooks from 'common/hooks';
 
-jest.mock('react-router-dom', () => ({
-    ...jest.requireActual('react-router-dom'),
-    Link: 'a',
-    useParams: () => '1',
-    useNavigate: jest.fn(),
-    useLocation: () => () => ({ pathname: mockPathName })
-}));
+beforeAll(() => {
+    Object.defineProperty(window, 'scrollTo', {
+        value: jest.fn(),
+        writable: true
+    });
+});
 
 jest.mock('common/hooks');
 
 describe('PropertyDetailContent page', () => {
-    const mockedUseAppSelector = jest.spyOn(reduxHooks, 'useAppSelector');
-    const mockedUseAppDispatch = jest.spyOn(reduxHooks, 'useAppDispatch');
+    const mockedUseAppSelector = jest.spyOn(hooks, 'useAppSelector');
+    const mockedUseAppDispatch = jest.spyOn(hooks, 'useAppDispatch');
+    const mockedUseImageOnLoad = jest.spyOn(hooks, 'useImageOnLoad');
     const { propertyDetail } = mockReduxStore;
 
     beforeEach(() => {
+        mockedUseImageOnLoad.mockReturnValue({
+            handleImageOnLoad: jest.fn(),
+            css: { thumbnail: {}, fullSize: {} },
+            isLoaded: false
+        });
         mockedUseAppSelector.mockReturnValue(propertyDetail);
         mockedUseAppDispatch.mockReturnValue(jest.fn());
     });
 
     it('should render Container component', () => {
-        render(<PropertyDetailContent />);
+        renderWithRoutes(<PropertyDetailContent />);
         const container = screen.getByTestId('container-id');
         expect(container).toBeInTheDocument();
     });
 
     it('should render title of FullInformationCard', () => {
-        render(<PropertyDetailContent />);
+        renderWithRoutes(<PropertyDetailContent />);
         const propertyTitle = screen.getByText(propertyDetail.data.title);
         expect(propertyTitle).toBeInTheDocument();
     });
 
     it('should render PropertyGallery component', () => {
-        render(<PropertyDetailContent />);
+        renderWithRoutes(<PropertyDetailContent />);
         const galleryContainers = screen.getAllByTestId('swiper-container');
         expect(galleryContainers).toHaveLength(2);
     });
 
     it('should render Breadcrumbs component', () => {
-        render(<PropertyDetailContent />);
+        renderWithRoutes(<PropertyDetailContent />);
         const breadcrumbs = screen.getByLabelText('breadcrumbs');
         expect(breadcrumbs).toBeInTheDocument();
     });
 
     it('should take a snapshot', () => {
-        const { container } = render(<PropertyDetailContent />);
+        const { container } = renderWithRoutes(<PropertyDetailContent />);
         expect(container).toMatchSnapshot();
     });
 });

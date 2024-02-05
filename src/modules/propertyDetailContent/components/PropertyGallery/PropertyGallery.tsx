@@ -14,21 +14,14 @@ export const PropertyGallery: FC<IPropertyGallery> = ({ photos }) => {
 
     return (
         <StyledGalleryWrapper>
-            <StyledSwiperMainContainer
-                thumbs={{ swiper: thumbsRef }}
-                navigation
-                pagination
-                keyboard
-                lazyPreloadPrevNext={1}
-            >
+            <StyledSwiperMainContainer thumbs={{ swiper: thumbsRef }} navigation pagination keyboard>
                 {photos?.map((photo, index) => (
-                    <SwiperSlide key={`photo-${index}`} lazy>
-                        <Image src={photo} alt={`property-${index}`} loading="lazy" />
+                    <SwiperSlide key={`photo-${index}`}>
+                        <Image src={photo} alt={`property-${index}`} loading="lazy" withPlaceholder />
                     </SwiperSlide>
                 ))}
             </StyledSwiperMainContainer>
             <StyledSwiperThumbContainer
-                lazyPreloadPrevNext={1}
                 slidesPerView="auto"
                 spaceBetween={20}
                 freeMode
@@ -38,8 +31,8 @@ export const PropertyGallery: FC<IPropertyGallery> = ({ photos }) => {
                 }}
             >
                 {photos?.map((photo, index) => (
-                    <SwiperSlide lazy key={`thumbs-${index}`}>
-                        <Image src={photo} alt={`property-thumbs-${index}`} loading="lazy" />
+                    <SwiperSlide key={`thumbs-${index}`}>
+                        <Image src={photo} alt={`property-thumbs-${index}`} loading="lazy" withPlaceholder />
                     </SwiperSlide>
                 ))}
             </StyledSwiperThumbContainer>

@@ -1,32 +1,24 @@
 import { PropertyDetailBreadCrumbs } from 'modules/propertyDetailContent/components';
 
-import { render, screen, mockPathName } from 'common/utils/test';
-
-jest.mock('react-router-dom', () => ({
-    ...jest.requireActual('react-router-dom'),
-    Link: 'a',
-    useParams: () => '1',
-    useNavigate: jest.fn(),
-    useLocation: () => () => ({ pathname: mockPathName })
-}));
+import { screen, renderWithRoutes } from 'common/utils/test';
 
 describe('PropertyDetailBreadCrumbs component', () => {
     it('should render the component without crashing', () => {
-        render(<PropertyDetailBreadCrumbs />);
+        renderWithRoutes(<PropertyDetailBreadCrumbs />);
     });
 
     it('should display a breadcrumb with a link to the home page', () => {
-        render(<PropertyDetailBreadCrumbs />);
+        renderWithRoutes(<PropertyDetailBreadCrumbs />);
         expect(screen.getByText('Home')).toBeInTheDocument();
     });
 
     it('should display custom breadcrumbs Properties', () => {
-        render(<PropertyDetailBreadCrumbs />);
+        renderWithRoutes(<PropertyDetailBreadCrumbs />);
         expect(screen.queryByText('Properties')).toBeInTheDocument();
     });
 
     it('should take a snapshot', () => {
-        const { container } = render(<PropertyDetailBreadCrumbs />);
+        const { container } = renderWithRoutes(<PropertyDetailBreadCrumbs />);
         expect(container).toMatchSnapshot();
     });
 });

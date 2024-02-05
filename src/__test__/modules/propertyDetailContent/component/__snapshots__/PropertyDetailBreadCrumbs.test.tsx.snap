@@ -3,7 +3,7 @@
 exports[`PropertyDetailBreadCrumbs component should take a snapshot 1`] = `
 <div>
   <div
-    class="sc-qZrbh bfdSXZ"
+    class="sc-brSamD iSHPyV"
   >
     <nav
       aria-label="breadcrumbs"
@@ -17,7 +17,7 @@ exports[`PropertyDetailBreadCrumbs component should take a snapshot 1`] = `
         >
           <a
             data-testid="breadcrumb-link"
-            to="/"
+            href="/"
           >
             <p
               class="MuiTypography-root MuiTypography-body1 sc-hLQSwg fJWCBm css-ahj2mt-MuiTypography-root"
@@ -36,7 +36,7 @@ exports[`PropertyDetailBreadCrumbs component should take a snapshot 1`] = `
           class="MuiBreadcrumbs-li"
         >
           <a
-            to="#"
+            href="/"
           >
             <p
               class="MuiTypography-root MuiTypography-body1 sc-hLQSwg fJWCBm css-ahj2mt-MuiTypography-root"
@@ -55,7 +55,7 @@ exports[`PropertyDetailBreadCrumbs component should take a snapshot 1`] = `
           class="MuiBreadcrumbs-li"
         >
           <a
-            to="/property/"
+            href="/property/"
           >
             <p
               class="MuiTypography-root MuiTypography-body1 sc-hLQSwg fJWCBm css-ahj2mt-MuiTypography-root"
