@@ -49,6 +49,7 @@
     "eslint-plugin-react-hooks": "^4.6.0",
     "husky": "^8.0.0",
     "jest-styled-components": "^7.2.0",
+    "msw": "^1.1.5",
     "postcss-styled-syntax": "^0.6.4",
     "prettier": "3.2.3",
     "redux-saga-test-plan": "^4.0.6",
