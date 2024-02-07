@@ -7,7 +7,7 @@ exports[`PropertyDetailContent page should take a snapshot 1`] = `
     data-testid="container-id"
   >
     <div
-      class="sc-qZrbh bfdSXZ"
+      class="sc-brSamD iSHPyV"
     >
       <nav
         aria-label="breadcrumbs"
@@ -21,7 +21,7 @@ exports[`PropertyDetailContent page should take a snapshot 1`] = `
           >
             <a
               data-testid="breadcrumb-link"
-              to="/"
+              href="/"
             >
               <p
                 class="MuiTypography-root MuiTypography-body1 sc-hLQSwg fJWCBm css-ahj2mt-MuiTypography-root"
@@ -40,7 +40,7 @@ exports[`PropertyDetailContent page should take a snapshot 1`] = `
             class="MuiBreadcrumbs-li"
           >
             <a
-              to="#"
+              href="/"
             >
               <p
                 class="MuiTypography-root MuiTypography-body1 sc-hLQSwg fJWCBm css-ahj2mt-MuiTypography-root"
@@ -59,7 +59,7 @@ exports[`PropertyDetailContent page should take a snapshot 1`] = `
             class="MuiBreadcrumbs-li"
           >
             <a
-              to="/property/"
+              href="/property/"
             >
               <p
                 class="MuiTypography-root MuiTypography-body1 sc-hLQSwg fJWCBm css-ahj2mt-MuiTypography-root"
@@ -70,13 +70,13 @@ exports[`PropertyDetailContent page should take a snapshot 1`] = `
       </nav>
     </div>
     <div
-      class="sc-fsYfdN huiuZN"
+      class="sc-eTNRI cvlqA-D"
     >
       <div
-        class="sc-eDLKkx bSMyoG"
+        class="sc-qZrbh gHMCpY"
       >
         <swiper-container
-          class="sc-jTQCzO lnbGVf"
+          class="sc-jsEeTM gIxqPw"
           data-testid="swiper-container"
           init="false"
         >
@@ -85,7 +85,8 @@ exports[`PropertyDetailContent page should take a snapshot 1`] = `
           >
             <img
               alt="property-0"
-              src="photo1.jpg"
+              loading="lazy"
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAIAAAAmkwkpAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAP0lEQVR4nAE0AMv/AAAHEYuepKGtsyYyOABEVVWtsLagm6STtK8Ap6ely8G2//TW6v/1AKqtoM+9n/3fxdzTxZdEHmCoP789AAAAAElFTkSuQmCC"
             />
           </swiper-slide>
           <swiper-slide
@@ -93,12 +94,13 @@ exports[`PropertyDetailContent page should take a snapshot 1`] = `
           >
             <img
               alt="property-1"
-              src="photo2.jpg"
+              loading="lazy"
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAIAAAAmkwkpAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAP0lEQVR4nAE0AMv/AAAHEYuepKGtsyYyOABEVVWtsLagm6STtK8Ap6ely8G2//TW6v/1AKqtoM+9n/3fxdzTxZdEHmCoP789AAAAAElFTkSuQmCC"
             />
           </swiper-slide>
         </swiper-container>
         <swiper-container
-          class="sc-gLLuof EQlPQ"
+          class="sc-kFCroH hrcOlN"
           data-testid="swiper-container"
           init="false"
         >
@@ -107,7 +109,8 @@ exports[`PropertyDetailContent page should take a snapshot 1`] = `
           >
             <img
               alt="property-thumbs-0"
-              src="photo1.jpg"
+              loading="lazy"
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAIAAAAmkwkpAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAP0lEQVR4nAE0AMv/AAAHEYuepKGtsyYyOABEVVWtsLagm6STtK8Ap6ely8G2//TW6v/1AKqtoM+9n/3fxdzTxZdEHmCoP789AAAAAElFTkSuQmCC"
             />
           </swiper-slide>
           <swiper-slide
@@ -115,13 +118,14 @@ exports[`PropertyDetailContent page should take a snapshot 1`] = `
           >
             <img
               alt="property-thumbs-1"
-              src="photo2.jpg"
+              loading="lazy"
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAIAAAAmkwkpAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAP0lEQVR4nAE0AMv/AAAHEYuepKGtsyYyOABEVVWtsLagm6STtK8Ap6ely8G2//TW6v/1AKqtoM+9n/3fxdzTxZdEHmCoP789AAAAAElFTkSuQmCC"
             />
           </swiper-slide>
         </swiper-container>
       </div>
       <div
-        class="sc-iBdnpw hdhuIM"
+        class="sc-csKJxZ imMYB"
       >
         <h5
           class="MuiTypography-root MuiTypography-h5 css-bezmlo-MuiTypography-root"
@@ -131,18 +135,51 @@ exports[`PropertyDetailContent page should take a snapshot 1`] = `
         <h6
           class="MuiTypography-root MuiTypography-h6 css-2ulfj5-MuiTypography-root"
         >
+          <svg
+            aria-hidden="true"
+            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+            data-testid="FmdGoodOutlinedIcon"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M12 12c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2m6-1.8C18 6.57 15.35 4 12 4s-6 2.57-6 6.2c0 2.34 1.95 5.44 6 9.14 4.05-3.7 6-6.8 6-9.14M12 2c4.2 0 8 3.22 8 8.2 0 3.32-2.67 7.25-8 11.8-5.33-4.55-8-8.48-8-11.8C4 5.22 7.8 2 12 2"
+            />
+          </svg>
           Address: 
           Green Street, 123
         </h6>
         <h6
           class="MuiTypography-root MuiTypography-h6 css-2ulfj5-MuiTypography-root"
         >
+          <svg
+            aria-hidden="true"
+            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+            data-testid="HailOutlinedIcon"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M12 6c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2m5-4h2c0 2.7-.93 4.41-2.3 5.5-.5.4-1.1.7-1.7.9V22h-2v-6h-2v6H9V10.1c-.3.1-.5.2-.6.3-.53.41-1.4 1.03-1.4 3.6H5c0-2.06.35-3.78 2.11-5.29C8.21 7.81 10 7 12 7s2.68-.46 3.48-1.06C15.96 5.55 17 4.76 17 2M4 16h3v6H4z"
+            />
+          </svg>
           Seller: 
           John Doe
         </h6>
         <h6
           class="MuiTypography-root MuiTypography-h6 css-2ulfj5-MuiTypography-root"
         >
+          <svg
+            aria-hidden="true"
+            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+            data-testid="DescriptionOutlinedIcon"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M8 16h8v2H8zm0-4h8v2H8zm6-10H6c-1.1 0-2 .9-2 2v16c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8zm4 18H6V4h7v5h5z"
+            />
+          </svg>
           Description: 
           A charming house nestled near a beautiful forest. Perfect for nature lovers.
         </h6>
@@ -150,6 +187,22 @@ exports[`PropertyDetailContent page should take a snapshot 1`] = `
           class="MuiTypography-root MuiTypography-body1 price css-ahj2mt-MuiTypography-root"
         >
           $250,000.00
+          <svg
+            aria-hidden="true"
+            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+            data-testid="LocalOfferOutlinedIcon"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="m21.41 11.58-9-9C12.05 2.22 11.55 2 11 2H4c-1.1 0-2 .9-2 2v7c0 .55.22 1.05.59 1.42l9 9c.36.36.86.58 1.41.58s1.05-.22 1.41-.59l7-7c.37-.36.59-.86.59-1.41s-.23-1.06-.59-1.42M13 20.01 4 11V4h7v-.01l9 9z"
+            />
+            <circle
+              cx="6.5"
+              cy="6.5"
+              r="1.5"
+            />
+          </svg>
         </p>
       </div>
     </div>

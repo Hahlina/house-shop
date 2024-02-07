@@ -9,12 +9,19 @@ export const FullInformationCardStyled = styled.div`
     max-height: 600px;
     width: 100%;
     height: 100%;
-    border-radius: 20px;
-    padding: 40px;
+    border-radius: 10px;
+    padding: 20px;
     background: ${({ theme: { colors } }) => colors.white};
 
+    & > * {
+        display: flex;
+        gap: 5px;
+    }
+
     p.price {
-        text-align: center;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
         font-size: 30px;
         color: ${({ theme: { colors } }) => colors.orange};
     }

@@ -1,13 +1,18 @@
-import { Typography } from '@mui/material';
+import { Box, Typography } from '@mui/material';
+import { Image } from 'common/components';
 
-import { PreviewBannerStyled } from './PreviewBanner.styled';
+import { PreviewBannerStyled, TitleContentStyled, GoDawnPointBlock } from './PreviewBanner.styled';
 
 export const PreviewBanner = () => (
     <PreviewBannerStyled>
-        <img className="preview-image" src="/images/previewImage.jpg" alt="house" />
-        <Typography className="preview-title" component="h1">
-            <Typography>Let's Find Your</Typography>
-            <Typography>Dream House</Typography>
-        </Typography>
+        <Image className="logo" src="/images/logo.svg" alt="logo" />
+        <Image className="preview-image" src="/images/previewImage.webp" alt="home-banner" withPlaceholder />
+        <TitleContentStyled>
+            <Typography className="preview-title">Let's find your dream house</Typography>
+            <GoDawnPointBlock>
+                <Box className="arrow" />
+                <Typography className="scroll-dawn-text">scroll dawn to buy your home</Typography>
+            </GoDawnPointBlock>
+        </TitleContentStyled>
     </PreviewBannerStyled>
 );

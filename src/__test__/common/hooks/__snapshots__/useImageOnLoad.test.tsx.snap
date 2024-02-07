@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`useImageOnLoad should take a snapshot 1`] = `
+Object {
+  "current": Object {
+    "css": Object {
+      "fullSize": Object {
+        "opacity": 0,
+        "transition": "opacity 800ms ease-in 0ms",
+      },
+      "thumbnail": Object {
+        "transition": "visibility 200ms ease-out 700ms",
+        "visibility": "visible",
+      },
+    },
+    "handleImageOnLoad": [Function],
+    "isLoaded": false,
+  },
+}
+`;

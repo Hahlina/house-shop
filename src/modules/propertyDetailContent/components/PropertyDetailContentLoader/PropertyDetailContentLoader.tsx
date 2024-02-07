@@ -6,7 +6,7 @@ import { PropertyDetailContentStyled } from 'modules/propertyDetailContent/Prope
 
 export const PropertyDetailContentLoader = () => (
     <Container>
-        <Skeleton width={200} height={30} sx={{ marginTop: 2 }} />
+        <Skeleton width={200} height={45} />
         <PropertyDetailContentStyled>
             <PropertyGalleryLoader />
             <FullInformationCardLoader />

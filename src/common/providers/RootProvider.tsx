@@ -2,9 +2,12 @@ import type { FC, PropsWithChildren } from 'react';
 
 import { StyleProvider } from './StyleProviders';
 import { StoreProvider } from './StoreProvider';
+import { MaterialProvider } from './MaterialProvider';
 
 export const RootProvider: FC<PropsWithChildren> = ({ children }) => (
     <StoreProvider>
-        <StyleProvider>{children}</StyleProvider>
+        <MaterialProvider>
+            <StyleProvider>{children}</StyleProvider>
+        </MaterialProvider>
     </StoreProvider>
 );

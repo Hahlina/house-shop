@@ -60,8 +60,6 @@ export const mockCustomPathNames = [
     { name: 'Page 2', to: '/page1/page2' }
 ];
 
-export const mockPathName = '/page1/page2';
-
 export const mockCustomLinkProps = { target: '_blank' };
 
 export const mockReduxStore = {

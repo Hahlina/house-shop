@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`usePagination should take a snapshot 1`] = `
+Object {
+  "current": Object {
+    "activePage": 1,
+    "pagesNumber": 3,
+    "setActivePage": [Function],
+  },
+}
+`;

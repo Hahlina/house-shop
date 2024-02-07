@@ -1,16 +1,13 @@
 import { fetchApi } from 'common/api/fetchApi';
 
 describe('fetchApi', () => {
-    beforeEach(() => {
-        jest.resetAllMocks();
-    });
-
     const url = 'https://example.com/api/data';
     const options = { method: 'GET' };
 
     it('should fetch data successfully', async () => {
         global.fetch = jest.fn().mockResolvedValue({
-            json: jest.fn().mockResolvedValue({ data: 'mocked data' })
+            json: jest.fn().mockResolvedValue({ data: 'mocked data' }),
+            ok: true
         });
         const result = await fetchApi(url, options);
         expect(result).toEqual({ data: 'mocked data' });
@@ -24,9 +21,9 @@ describe('fetchApi', () => {
 
     it('should handle non-JSON response', async () => {
         global.fetch = jest.fn().mockResolvedValue({
-            json: jest.fn().mockRejectedValue(new Error('Unexpected JSON response'))
+            json: jest.fn().mockRejectedValue(new Error('Something went wrong'))
         });
         const result = fetchApi(url, options);
-        await expect(result).rejects.toThrow('Unexpected JSON response');
+        await expect(result).rejects.toThrow('Something went wrong');
     });
 });

@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NothingFound component should take a snapshot 1`] = `
+<div>
+  <div
+    class="sc-fsYfdN jQekBI"
+  >
+    <img
+      alt="nothing found"
+      src="/images/nothinkFound.svg"
+      style="visibility: visible; transition: visibility 200ms ease-out 700ms;"
+    />
+  </div>
+</div>
+`;

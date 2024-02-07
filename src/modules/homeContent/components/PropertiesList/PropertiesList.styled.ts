@@ -1,7 +1,8 @@
 import styled from 'styled-components';
+import { Skeleton } from '@mui/material';
 
 export const PropertiesListStyled = styled.div`
-    margin: 100px 0;
+    margin: 50px 0;
 
     p.list-title {
         position: relative;
@@ -26,6 +27,11 @@ export const PropertiesListStyled = styled.div`
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        gap: 30px 30px;
+        gap: 30px;
     }
+`;
+
+export const ListTitleSkeletonStyled = styled(Skeleton)`
+    margin-bottom: 50px !important;
+    width: 300px;
 `;

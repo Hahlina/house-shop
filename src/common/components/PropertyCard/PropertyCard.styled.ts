@@ -27,6 +27,10 @@ export const CardContentStyled = styled(CardContent)`
 
     p {
         font-size: 20px;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        overflow: hidden;
     }
 
     p.title {

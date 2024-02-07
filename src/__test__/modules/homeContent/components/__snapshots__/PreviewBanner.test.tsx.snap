@@ -3,27 +3,41 @@
 exports[`PreviewBanner components should take a snapshot 1`] = `
 <div>
   <div
-    class="sc-beySPh cjvRJa"
+    class="sc-qZrbh jlkvTM"
   >
     <img
-      alt="house"
-      class="preview-image"
-      src="/images/previewImage.jpg"
+      alt="logo"
+      class="logo"
+      src="/images/logo.svg"
+      style="visibility: visible; transition: visibility 200ms ease-out 700ms;"
     />
-    <h1
-      class="MuiTypography-root MuiTypography-body1 preview-title css-ahj2mt-MuiTypography-root"
+    <img
+      alt="home-banner"
+      class="preview-image"
+      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAIAAAAmkwkpAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAP0lEQVR4nAE0AMv/AAAHEYuepKGtsyYyOABEVVWtsLagm6STtK8Ap6ely8G2//TW6v/1AKqtoM+9n/3fxdzTxZdEHmCoP789AAAAAElFTkSuQmCC"
+      style="visibility: visible; transition: visibility 200ms ease-out 700ms;"
+    />
+    <div
+      class="sc-jsEeTM EioFe"
     >
       <p
-        class="MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root"
+        class="MuiTypography-root MuiTypography-body1 preview-title css-ahj2mt-MuiTypography-root"
       >
-        Let's Find Your
+        Let's find your dream house
       </p>
-      <p
-        class="MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root"
+      <div
+        class="sc-kFCroH iGeivr"
       >
-        Dream House
-      </p>
-    </h1>
+        <div
+          class="arrow MuiBox-root css-0"
+        />
+        <p
+          class="MuiTypography-root MuiTypography-body1 scroll-dawn-text css-ahj2mt-MuiTypography-root"
+        >
+          scroll dawn to buy your home
+        </p>
+      </div>
+    </div>
   </div>
 </div>
 `;

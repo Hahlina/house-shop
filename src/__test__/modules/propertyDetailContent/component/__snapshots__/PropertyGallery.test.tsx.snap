@@ -3,10 +3,10 @@
 exports[`PropertyGallery component should take a snapshot 1`] = `
 <div>
   <div
-    class="sc-eDLKkx bSMyoG"
+    class="sc-qZrbh gHMCpY"
   >
     <swiper-container
-      class="sc-jTQCzO lnbGVf"
+      class="sc-jsEeTM gIxqPw"
       data-testid="swiper-container"
       init="false"
     >
@@ -15,7 +15,9 @@ exports[`PropertyGallery component should take a snapshot 1`] = `
       >
         <img
           alt="property-0"
-          src="photo1.jpg"
+          loading="lazy"
+          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAIAAAAmkwkpAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAP0lEQVR4nAE0AMv/AAAHEYuepKGtsyYyOABEVVWtsLagm6STtK8Ap6ely8G2//TW6v/1AKqtoM+9n/3fxdzTxZdEHmCoP789AAAAAElFTkSuQmCC"
+          style="visibility: visible; transition: visibility 200ms ease-out 700ms;"
         />
       </swiper-slide>
       <swiper-slide
@@ -23,12 +25,14 @@ exports[`PropertyGallery component should take a snapshot 1`] = `
       >
         <img
           alt="property-1"
-          src="photo2.jpg"
+          loading="lazy"
+          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAIAAAAmkwkpAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAP0lEQVR4nAE0AMv/AAAHEYuepKGtsyYyOABEVVWtsLagm6STtK8Ap6ely8G2//TW6v/1AKqtoM+9n/3fxdzTxZdEHmCoP789AAAAAElFTkSuQmCC"
+          style="visibility: visible; transition: visibility 200ms ease-out 700ms;"
         />
       </swiper-slide>
     </swiper-container>
     <swiper-container
-      class="sc-gLLuof EQlPQ"
+      class="sc-kFCroH hrcOlN"
       data-testid="swiper-container"
       init="false"
     >
@@ -37,7 +41,9 @@ exports[`PropertyGallery component should take a snapshot 1`] = `
       >
         <img
           alt="property-thumbs-0"
-          src="photo1.jpg"
+          loading="lazy"
+          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAIAAAAmkwkpAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAP0lEQVR4nAE0AMv/AAAHEYuepKGtsyYyOABEVVWtsLagm6STtK8Ap6ely8G2//TW6v/1AKqtoM+9n/3fxdzTxZdEHmCoP789AAAAAElFTkSuQmCC"
+          style="visibility: visible; transition: visibility 200ms ease-out 700ms;"
         />
       </swiper-slide>
       <swiper-slide
@@ -45,7 +51,9 @@ exports[`PropertyGallery component should take a snapshot 1`] = `
       >
         <img
           alt="property-thumbs-1"
-          src="photo2.jpg"
+          loading="lazy"
+          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAIAAAAmkwkpAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAP0lEQVR4nAE0AMv/AAAHEYuepKGtsyYyOABEVVWtsLagm6STtK8Ap6ely8G2//TW6v/1AKqtoM+9n/3fxdzTxZdEHmCoP789AAAAAElFTkSuQmCC"
+          style="visibility: visible; transition: visibility 200ms ease-out 700ms;"
         />
       </swiper-slide>
     </swiper-container>
